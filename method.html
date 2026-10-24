@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Method | Metrace</title>
+<meta name="description" content="How we rebuild point-in-time data from archived web pages, and how we check it.">
+<meta property="og:title" content="Method | Metrace">
+<meta property="og:description" content="How we rebuild point-in-time data from archived web pages, and how we check it.">
+<meta property="og:type" content="website">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span>Metrace</a>
+    <nav class="nav" aria-label="Main"><a href="datasets/statistics-tracker.html">Statistics tracker</a><a href="datasets/india-deposit-rates.html">Deposit rates</a><a href="datasets/china-arrears.html">Government arrears</a><a href="method.html" aria-current=page>Method</a><a href="about.html">About</a><a class="btn btn-sm" href="mailto:liuxiaoran@berkeley.edu?subject=Sample%20request">Request a sample</a></nav>
+  </div>
+</header>
+<main>
+
+<section class="wrap page-head">
+  <h1>Method</h1>
+  <p class="lead">We work from what was actually published, on the day it was published. Every value in our files can be traced to an archived page.</p>
+</section>
+<section class="wrap section"><div class="prose">
+  <h2>Sources</h2>
+  <p>We pull the full list of archived captures for each source site from the Internet Archive's Wayback Machine, then fetch the pages, PDFs and data files that matter. We also read live sites directly: government search portals and open-government catalogues fill in documents the archive missed.</p>
+  <h2>Reading</h2>
+  <p>Language models read each archived version. For statistics offices, two detectors propose candidate events: one watches the stream of file names and folders, the other compares the text of successive releases and calendars. For bank rate pages and rate cards, a parser reads every table and keeps the effective date the bank stated.</p>
+  <h2>Checking</h2>
+  <p>Two model reviewers code each candidate independently against a written manual. A third model settles disagreements. Every event we publish is confirmed by a source outside the office, then a separate agent tries to refute it.</p>
+  <h2>Dates</h2>
+  <p>We keep three dates where they exist: when the change took effect, when the source announced it, and when an archive first captured it. A capture date is evidence that something was public by then, not the release date.</p>
+  <h2>Corrections</h2>
+  <p>When a source revises a value or a page changes, we add a new row and keep the old one, so any past date can be reconstructed as it looked then.</p>
+</div></section>
+<section class="wrap section">
+  <h2>Validation results</h2>
+  <div class="scroll"><table class="data narrow"><thead><tr><th>Check</th><th>Result</th></tr></thead><tbody>
+  <tr><td>Known statistics events recovered, list fixed before the pipeline ran</td><td>17 of 22</td></tr>
+  <tr><td>Agreement between two independent model reviewers, 100 cases</td><td>87% (kappa 0.755)</td></tr>
+  <tr><td>Further events found and confirmed by an outside source</td><td>47</td></tr>
+  <tr><td>First 2022 deposit rate rises dated as in news reports</td><td>7 of 7 banks</td></tr>
+  <tr><td>State Bank of India rate changes recovered against the bank's own history file</td><td>13 of 16, no false dates</td></tr>
+  <tr><td>Arrears reports found in a full listing of one Shenzhen agency's catalogue</td><td>4 of 4</td></tr>
+  </tbody></table></div>
+</section>
+<section class="band"><div class="wrap band-in">
+<div><h2>Request a sample</h2><p>Tell us which countries, banks or series you cover. We will send a sample file and the field guide.</p></div>
+<a class="btn" href="mailto:liuxiaoran@berkeley.edu?subject=Sample%20request">Email us</a></div></section>
+</main>
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div><a class="brand brand-foot" href="index.html"><span class="mark" aria-hidden="true"></span>Metrace</a>
+    <p>Point-in-time data rebuilt from the archived web. Singapore.</p></div>
+    <div class="foot-links"><a href="datasets/statistics-tracker.html">Statistics tracker</a><a href="datasets/india-deposit-rates.html">Deposit rates</a><a href="datasets/china-arrears.html">Government arrears</a><a href="method.html" aria-current=page>Method</a><a href="about.html">About</a><a href="mailto:liuxiaoran@berkeley.edu">liuxiaoran@berkeley.edu</a></div>
+  </div>
+  <div class="wrap fine">© 2026 Metrace. Sources include official websites and the Internet Archive's Wayback Machine.</div>
+</footer>
+</body>
+</html>
