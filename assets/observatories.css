@@ -1,0 +1,47 @@
+/* Additions to Metrace's existing typography and orange/navy identity. */
+.skip-link { position: fixed; top: -80px; left: 20px; z-index: 30; padding: 10px 16px; background: #fff; border: 2px solid var(--acc); }
+.skip-link:focus { top: 10px; }
+:focus-visible { outline: 3px solid var(--acc); outline-offset: 4px; }
+[id] { scroll-margin-top: 110px; }
+.product-grid, .foundation-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.product-grid .card h3 { font-family: var(--serif); font-size: 1.7rem; }
+.product-grid .eyebrow { margin-bottom: 8px; }
+.status-line { display: block; color: var(--muted); font-size: .85rem; margin: 0 0 18px; }
+.issue-feature { display: grid; grid-template-columns: 1.8fr 1fr; gap: 48px; padding: 36px; border-top: 3px solid var(--acc); background: var(--soft); border-radius: 0 0 10px 10px; }
+.issue-feature h2 { font-size: clamp(1.8rem, 3.2vw, 2.7rem); }
+.issue-aside { border-left: 1px solid var(--rule); padding-left: 36px; }
+.issue-number { font-family: var(--serif); color: var(--acc); font-size: 4.4rem; line-height: 1.2; display: block; margin-bottom: 12px; }
+.issue-aside p { color: var(--muted); }
+.issue-aside strong { color: var(--ink); }
+.evidence-list { display: grid; gap: 22px; max-width: 950px; }
+.evidence-card { padding: 28px; border: 1px solid var(--rule); border-radius: 10px; }
+.evidence-card h3 { font-family: var(--serif); font-size: 1.5rem; }
+.evidence-card .eyebrow { margin-bottom: 8px; }
+.why-care { border-left: 3px solid var(--acc); padding-left: 16px; }
+details { border-top: 1px solid var(--rule); padding-top: 12px; }
+summary { cursor: pointer; font-weight: 600; }
+details p:first-of-type { margin-top: 12px; }
+.source-links { font-size: .9rem; line-height: 1.9; }
+.research-note { max-width: 760px; border-left: 3px solid var(--ink); padding: 12px 24px; background: var(--soft); }
+.research-note .eyebrow { color: var(--muted); }
+.card a, .source-links a { overflow-wrap: anywhere; }
+@media (max-width: 900px) {
+  .issue-feature { grid-template-columns: 1fr; gap: 22px; }
+  .issue-aside { border-left: 0; border-top: 1px solid var(--rule); padding: 22px 0 0; }
+  .issue-number { font-size: 3rem; }
+}
+@media (max-width: 560px) {
+  .product-grid, .foundation-grid { grid-template-columns: 1fr; }
+  .issue-feature { padding: 24px 20px; }
+  .evidence-card { padding: 22px 18px; }
+  .top-in { flex-wrap: wrap; gap: 8px; padding-top: 10px; padding-bottom: 10px; }
+  .nav { width: 100%; gap: 14px; font-size: .78rem; }
+  .nav a:not(.btn) { display: inline; }
+  .nav .btn { padding: 5px 8px; font-size: .75rem; }
+  [id] { scroll-margin-top: 145px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .card { transition: none; }
+  .card:hover { transform: none; }
+}

@@ -1,64 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Method | Metrace</title>
-<meta name="description" content="How we rebuild point-in-time data from archived web pages, and how we check it.">
-<meta property="og:title" content="Method | Metrace">
-<meta property="og:description" content="How we rebuild point-in-time data from archived web pages, and how we check it.">
-<meta property="og:type" content="website">
-<link rel="canonical" href="https://metracelabs.com/method.html">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/style.css">
-</head>
-<body>
+<meta content="How Metrace separates source evidence, dates, review scope and uncertainty across its research products." name="description"/>
+<meta content="Method | Metrace" property="og:title"/>
+<meta content="How Metrace separates source evidence, dates, review scope and uncertainty across its research products." property="og:description"/>
+<meta content="website" property="og:type"/>
+<link href="https://metracelabs.com/method.html" rel="canonical"/>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="assets/style.css" rel="stylesheet"/>
+<link href="assets/observatories.css" rel="stylesheet"/></head>
+<body><a class="skip-link" href="#main-content">Skip to content</a>
 <header class="top">
-  <div class="wrap top-in">
-    <a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span>Metrace</a>
-    <nav class="nav" aria-label="Main"><a href="index.html#blueprint">What we measure</a><a href="datasets/index.html">Datasets</a><a href="method.html" aria-current=page>Method</a><a href="about.html">About</a><a class="btn btn-sm" href="mailto:hello@metracelabs.com?subject=Sample%20request">Request a sample</a></nav>
-  </div>
+<div class="wrap top-in">
+<a class="brand" href="index.html"><span aria-hidden="true" class="mark"></span>Metrace</a>
+<nav aria-label="Main" class="nav"><a href="index.html#blueprint">What we measure</a><a href="datasets/index.html">Datasets</a><a aria-current="page" href="method.html">Method</a><a href="about.html">About</a><a class="btn btn-sm" href="mailto:hello@metracelabs.com?subject=Sample%20request">Request a sample</a></nav>
+</div>
 </header>
-<main>
-
-<section class="wrap page-head">
-  <h1>Method</h1>
-  <p class="lead">We work from what was actually published, on the day it was published. Every value in our files can be traced to an archived page.</p>
-</section>
-<section class="wrap section"><div class="prose">
-  <h2>Sources</h2>
-  <p>We pull the full list of archived captures for each source site from the Internet Archive's Wayback Machine, then fetch the pages, PDFs and data files that matter. We also read live sites directly: government search portals and open-government catalogues fill in documents the archive missed.</p>
-  <h2>Reading</h2>
-  <p>Language models read each archived version. For statistics offices, two detectors propose candidate events: one watches the stream of file names and folders, the other compares the text of successive releases and calendars. For bank rate pages and rate cards, a parser reads every table and keeps the effective date the bank stated.</p>
-  <h2>Checking</h2>
-  <p>Two model reviewers code each candidate independently against a written manual. A third model settles disagreements. Every event we publish is confirmed by a source outside the office, then a separate agent tries to refute it.</p>
-  <h2>Dates</h2>
-  <p>We keep three dates where they exist: when the change took effect, when the source announced it, and when an archive first captured it. A capture date is evidence that something was public by then, not the release date.</p>
-  <h2>Corrections</h2>
-  <p>When a source revises a value or a page changes, we add a new row and keep the old one, so any past date can be reconstructed as it looked then.</p>
-</div></section>
-<section class="wrap section">
-  <h2>Validation results</h2>
-  <div class="scroll"><table class="data narrow"><thead><tr><th>Check</th><th>Result</th></tr></thead><tbody>
-  <tr><td>Known statistics events recovered, list fixed before the pipeline ran</td><td>17 of 22</td></tr>
-  <tr><td>Agreement between two independent model reviewers, 100 cases</td><td>87% (kappa 0.755)</td></tr>
-  <tr><td>Further events found and confirmed by an outside source</td><td>47</td></tr>
-  <tr><td>First 2022 deposit rate rises dated as in news reports</td><td>7 of 7 banks</td></tr>
-  <tr><td>State Bank of India rate changes recovered against the bank's own history file</td><td>13 of 16, no false dates</td></tr>
-  <tr><td>Arrears reports found in a full listing of one Shenzhen agency's catalogue</td><td>4 of 4</td></tr>
-  </tbody></table></div>
-</section>
-<section class="band"><div class="wrap band-in">
-<div><h2>Request a sample</h2><p>Tell us which countries, banks or series you cover. We will send a sample file and the field guide.</p></div>
-<a class="btn" href="mailto:hello@metracelabs.com?subject=Sample%20request">Email us</a></div></section>
-</main>
+<main id="main-content"><section class="wrap page-head"><p class="eyebrow">Evidence and interpretation</p><h1>Method</h1><p class="lead">A useful data point needs an identity, a source and a defensible date. Every product states the scope of its evidence and review.</p></section><section class="wrap section"><h2>From source to finding</h2><div class="prose"><h2>Start from a specific source and unit</h2><p>Official releases, university catalogues, bank rate cards and shortage notices require different definitions. We record the institution, series or product identity before comparing versions. A page, a row and an underlying event are not interchangeable units.</p><h2>Preserve evidence and timing</h2><p>Where available, we retain source URLs, local snapshots and file hashes. A publisher’s displayed date, a statistical reference period, an archive capture and our retrieval time are separate fields. A later capture proves presence by that date; it does not prove first availability.</p><h2>Read, challenge and narrow the claim</h2><p>AI tools extract and compare source material. Selected findings receive separate source-based review; individual releases describe whether that review was independent coding, an informed challenge or a spot check. Review by AI agents is not human certification. Outside corroboration is stated where obtained, rather than assumed for every row.</p><h2>Keep missing evidence visible</h2><p>A failed request is an access gap, not proof of a discontinued statistic. A changed link is a candidate for investigation, not automatically a new event. An archived edition may omit intermediate revisions. We do not claim an exact historical state beyond the versions actually preserved.</p><h2>Distinguish corrections from source changes</h2><p>When our interpretation changes, the release records a correction. When new source evidence is recovered, its acquisition and historical dates remain distinct. Product releases state their current scope and unresolved gaps.</p></div></section><section class="wrap section"><h2>What the current checks establish</h2><div class="prose"><p>The inherited statistics-tracker retrospective test covered 22 in-scope known events: 17 had a same-series match and 14 had strict evidence showing the event itself. Detection rules and review scope were adjusted during development, so these are retrospective results, not performance on an untouched prospective test set.</p><p>The 47-row global discovery catalogue retains its earlier judgments. Economic Data Watch Issue 01 rechecks only seven selected cards. Its China module uses different review grades, and overlapping records are kept linked rather than added into a global total.</p><p>Education Issue 01 reviews all 13 evidence cards and spot-checks eight course records. The drug pilot has one prospective API baseline. Synopsis Notes has five editorial cases from a larger pairing exercise. None of these denominators is a universal accuracy measure.</p></div></section><section class="band"><div class="wrap band-in"><div><h2>Put the evidence to work</h2><p>Tell us which series, institutions or source changes matter to your research.</p></div><a class="btn" href="mailto:hello@metracelabs.com?subject=Metrace%20research%20sample">Request a sample</a></div></section></main>
 <footer class="foot">
-  <div class="wrap foot-in">
-    <div><a class="brand brand-foot" href="index.html"><span class="mark" aria-hidden="true"></span>Metrace</a>
-    <p>AI-built, audited data on what no one else measures. Singapore.</p></div>
-    <div class="foot-links"><a href="index.html#blueprint">What we measure</a><a href="datasets/index.html">Datasets</a><a href="method.html" aria-current=page>Method</a><a href="about.html">About</a><a href="mailto:hello@metracelabs.com">hello@metracelabs.com</a></div>
-  </div>
-  <div class="wrap fine">© 2026 Metrace. Sources include official websites and the Internet Archive's Wayback Machine.</div>
+<div class="wrap foot-in">
+<div><a class="brand brand-foot" href="index.html"><span aria-hidden="true" class="mark"></span>Metrace</a>
+<p>Evidence from the archived and live web. Singapore.</p></div>
+<div class="foot-links"><a href="index.html#blueprint">What we measure</a><a href="datasets/index.html">Datasets</a><a aria-current="page" href="method.html">Method</a><a href="about.html">About</a><a href="mailto:hello@metracelabs.com">hello@metracelabs.com</a></div>
+</div>
+<div class="wrap fine">© 2026 Metrace. Sources include official websites and the Internet Archive's Wayback Machine.</div>
 </footer>
 </body>
 </html>
+
