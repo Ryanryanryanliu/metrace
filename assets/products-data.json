@@ -1,0 +1,2385 @@
+[
+  {
+    "slug": "economic-data",
+    "title": "Economic Data Watch",
+    "domain": "Economy",
+    "version": "0.3",
+    "maturity": "Research preview",
+    "as_of": "2026-11-03",
+    "question": "Is this a new release, a revised value, or a change in what the data measure?",
+    "description": "Follow selected official release plans and source versions, while separating reference periods, publication dates and observed availability.",
+    "coverage": [
+      {
+        "value": "4",
+        "label": "countries in the current monitoring panel"
+      },
+      {
+        "value": "10",
+        "label": "precisely defined monitored series"
+      },
+      {
+        "value": "18",
+        "label": "official monitoring entry points"
+      },
+      {
+        "value": "1",
+        "label": "verified new-release event in the follow-up"
+      }
+    ],
+    "preview_scope": "Seven historical cases across five countries, plus one verified Vietnam release observed on 3 November 2026. Historical examples are distinct from the four-country current panel.",
+    "insight": "Vietnam’s October CPI value of 5.09% is a new reference month, not a revision of September’s 5.08%.",
+    "limitations": [
+      "The current panel is selected coverage, not exhaustive global monitoring.",
+      "The follow-up establishes one new release and no verified same-period numeric revisions; this is not a lifetime count.",
+      "Capture time establishes observation, not first public availability; date-only release plans do not establish intraday delays.",
+      "Historical examples preserve limits such as archived homepage text, inaccessible full releases and unresolved first-access times."
+    ],
+    "landing_path": "products/economic-data.html",
+    "records": [
+      {
+        "id": "ECON-GLOBAL-01",
+        "title": "Brazil: a census postponement is a plan change",
+        "group": "Brazil",
+        "period": "2020-03",
+        "status": "Publication plan change",
+        "summary": "An archived IBGE English homepage records an announcement dated 17 March 2020 that moves the planned 2020 census to 2021. This case records that contemporary plan change, not the eventual completion year.",
+        "facts": [
+          {
+            "label": "Announcement label",
+            "value": "17 March 2020"
+          },
+          {
+            "label": "Archived homepage",
+            "value": "30 March 2020"
+          },
+          {
+            "label": "Plan change",
+            "value": "2020 → 2021"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Brazil official statistical source (archived official page)",
+            "url": "https://web.archive.org/web/20200330205037id_/http://ibge.gov.br/en/home-eng.html",
+            "locator": "JSON.text splitlines, lines 705–707; derived text lines L0705–L0707"
+          }
+        ],
+        "notes": "Evidence is extracted text of the archived official homepage, not the full announcement or original HTML bytes. The announcement page returned 403 during the underlying review. Reasons, budgets and eventual implementation are outside this claim."
+      },
+      {
+        "id": "ECON-GLOBAL-02",
+        "title": "Japan: survey forms can affect year-on-year comparability",
+        "group": "Japan",
+        "period": "2018-03 / 2019-02",
+        "status": "Methodology and comparability",
+        "summary": "Japan’s Statistics Bureau explains on 9 March 2018 that half the household sample began using new diary forms in January. It warns of possible discontinuity in year-on-year changes and contributions, supplies a propensity-score/inverse-probability adjustment, and records a retrospective recalculation on 8 February 2019.",
+        "facts": [
+          {
+            "label": "Survey",
+            "value": "Family Income and Expenditure Survey"
+          },
+          {
+            "label": "New form use",
+            "value": "Half the sample from January 2018"
+          },
+          {
+            "label": "Recalculation notice",
+            "value": "8 February 2019"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Japan official statistical source",
+            "url": "https://www.stat.go.jp/english/data/kakei/change18.html",
+            "locator": "Web extracted lines L51–L57"
+          },
+          {
+            "title": "Japan official statistical source",
+            "url": "https://www.stat.go.jp/english/data/kakei/change18.html",
+            "locator": "Web extracted lines L47–L49"
+          }
+        ],
+        "notes": "The case confirms the official warning and adjustment arrangement. It does not audit every historical table or establish that every level series lacks back-calculation."
+      },
+      {
+        "id": "ECON-GLOBAL-03",
+        "title": "Greece: a flash estimate is suspended while a later release stays scheduled",
+        "group": "Greece",
+        "period": "2017-08",
+        "status": "Specific release suspension",
+        "summary": "On 4 August 2017, ELSTAT suspends the GDP flash estimate normally released 45 days after a quarter. The planned 14 August Q2 flash estimate is cancelled, while the same notice keeps provisional Q2 data scheduled for 1 September.",
+        "facts": [
+          {
+            "label": "Notice date",
+            "value": "4 August 2017"
+          },
+          {
+            "label": "Cancelled scheduled release",
+            "value": "14 August 2017, Q2 flash estimate"
+          },
+          {
+            "label": "Retained schedule",
+            "value": "1 September 2017, provisional Q2 data"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Greece official statistical source",
+            "url": "https://www.statistics.gr/documents/20181/2613595/NWS_040817_EN.pdf/600251d0-3c1a-4c0b-99ce-e1db49098426?t=1501837139538",
+            "locator": "Official English PDF page 1; web extracted lines L3–L11"
+          }
+        ],
+        "notes": "The notice establishes a suspension and a retained schedule. This case does not separately verify the September release, the duration of suspension, or motives."
+      },
+      {
+        "id": "ECON-GLOBAL-04",
+        "title": "South Africa: resumed publication retains a documented gap",
+        "group": "South Africa",
+        "period": "2026-07",
+        "status": "Resumption with series gap",
+        "summary": "Stats SA states that monthly insolvency statistics resumed on 21 July 2026 with June data and a series starting in January 2023. The article identifies a September 2021–December 2022 gap and says the new release is not a continuous extension of the old series. Company liquidation statistics had continued.",
+        "facts": [
+          {
+            "label": "First resumed release reported",
+            "value": "21 July 2026; June reference period"
+          },
+          {
+            "label": "Resumed series begins",
+            "value": "January 2023"
+          },
+          {
+            "label": "Documented gap",
+            "value": "September 2021–December 2022"
+          }
+        ],
+        "sources": [
+          {
+            "title": "South Africa official statistical source",
+            "url": "https://www.statssa.gov.za/?p=19751",
+            "locator": "Web extracted lines L51–L60; publication date L78"
+          },
+          {
+            "title": "South Africa official statistical source",
+            "url": "https://www.statssa.gov.za/?p=19751",
+            "locator": "Web extracted line L73 (footnote 3)"
+          }
+        ],
+        "notes": "This relies on the official explanatory article; the attempted release-PDF URL returned short HTML. The gap is not by itself proof of a specific methodology change. Exact earlier suspension timing and subsequent releases are not confirmed here."
+      },
+      {
+        "id": "CN-PBC-SURVEY-CATCHUP",
+        "title": "China: six reports keep reference quarters and page dates separate",
+        "group": "China",
+        "period": "2023-Q3/Q4 → 2024-03",
+        "status": "Catch-up publication",
+        "summary": "Six People’s Bank of China pages for the urban depositor, entrepreneur and banker surveys cover Q3 and Q4 2023 and display 22 March 2024 as their publication date. An official-list snapshot from 9 July 2024 contains all six links. The inherited ledger groups the three series under one delayed-publication context.",
+        "facts": [
+          {
+            "label": "Reports",
+            "value": "3 surveys × 2 quarters = 6"
+          },
+          {
+            "label": "Reference periods",
+            "value": "2023 Q3 and Q4"
+          },
+          {
+            "label": "Displayed publication date",
+            "value": "22 March 2024"
+          },
+          {
+            "label": "Historical visibility confirmed by",
+            "value": "9 July 2024 list snapshot"
+          }
+        ],
+        "sources": [
+          {
+            "title": "China official statistical source (archived official page)",
+            "url": "https://web.archive.org/web/20240709211857id_/https://www.pbc.gov.cn/diaochatongjisi/116219/116227/index.html",
+            "locator": "Six tr elements whose a[href] end with 5300689/5300697/5300703/5300716/5300722/5300730/index.html; adjacent date cells"
+          },
+          {
+            "title": "China official statistical source",
+            "url": "https://www.pbc.gov.cn/diaochatongjisi/116219/116227/5300689/index.html",
+            "locator": "title and visible timestamp below article heading"
+          },
+          {
+            "title": "China official statistical source",
+            "url": "https://www.pbc.gov.cn/diaochatongjisi/116219/116227/5300697/index.html",
+            "locator": "title and visible timestamp below article heading"
+          },
+          {
+            "title": "China official statistical source",
+            "url": "https://www.pbc.gov.cn/diaochatongjisi/116219/116227/5300703/index.html",
+            "locator": "title and visible timestamp below article heading"
+          },
+          {
+            "title": "China official statistical source",
+            "url": "https://www.pbc.gov.cn/diaochatongjisi/116219/116227/5300716/index.html",
+            "locator": "title and visible timestamp below article heading"
+          },
+          {
+            "title": "China official statistical source",
+            "url": "https://www.pbc.gov.cn/diaochatongjisi/116219/116227/5300722/index.html",
+            "locator": "title and visible timestamp below article heading"
+          },
+          {
+            "title": "China official statistical source",
+            "url": "https://www.pbc.gov.cn/diaochatongjisi/116219/116227/5300730/index.html",
+            "locator": "title and visible timestamp below article heading"
+          }
+        ],
+        "notes": "The page date does not establish first public availability that day. An expected October date was only an inherited cadence estimate, so no exact delay length or interruption start is claimed."
+      },
+      {
+        "id": "CN-NBS-RECEIVABLES-DEFINITION",
+        "title": "China: receivables labels mark two definition changes",
+        "group": "China",
+        "period": "2019-03 / 2020-03",
+        "status": "Definition change",
+        "summary": "The NBS industrial-profit release of 27 March 2019 replaces monthly accounts receivable with notes and accounts receivable. The 27 March 2020 release changes back to accounts receivable. Both explain the adjustments in relation to corporate financial-statement formats.",
+        "facts": [
+          {
+            "label": "2019 publication",
+            "value": "Notes and accounts receivable"
+          },
+          {
+            "label": "2020 publication",
+            "value": "Accounts receivable"
+          },
+          {
+            "label": "Ledger treatment",
+            "value": "Two separate definition-change events"
+          }
+        ],
+        "sources": [
+          {
+            "title": "China official statistical source (archived official page)",
+            "url": "https://web.archive.org/web/20190405093229id_/http://stats.gov.cn/tjsj/zxfb/201903/t20190327_1656417.html",
+            "locator": "27 March 2019 release; notes, indicator definitions, item 7; and registration-category note where relevant"
+          },
+          {
+            "title": "China official statistical source (archived official page)",
+            "url": "https://web.archive.org/web/20200327085242id_/http://stats.gov.cn/tjsj/zxfb/202003/t20200327_1735114.html",
+            "locator": "27 March 2020 release; notes, indicator definitions, item 7"
+          }
+        ],
+        "notes": "Release months are not statistical reference periods or proven first-access times. The case does not validate all historical values, back series or publication channels. Similar labels alone do not establish comparability."
+      },
+      {
+        "id": "CN-NBS-COLLECTIVE-BREAKDOWN",
+        "title": "China: a breakdown is removed while aggregate industrial statistics continue",
+        "group": "China",
+        "period": "2019-03",
+        "status": "Breakdown discontinuation",
+        "summary": "NBS releases of 14 and 27 March 2019 explicitly remove the collective-enterprise breakdown from 2019 onward. Those releases still publish their respective aggregate industrial output and profit results.",
+        "facts": [
+          {
+            "label": "Removed detail",
+            "value": "Collective-enterprise registration category"
+          },
+          {
+            "label": "First reviewed releases",
+            "value": "14 and 27 March 2019"
+          },
+          {
+            "label": "Scope",
+            "value": "One breakdown across two releases"
+          }
+        ],
+        "sources": [
+          {
+            "title": "China official statistical source (archived official page)",
+            "url": "https://web.archive.org/web/20190324153639id_/http://stats.gov.cn/tjsj/zxfb/201903/t20190314_1653784.html",
+            "locator": "14 March 2019 release; note 6, publication-content adjustment; main aggregate result"
+          },
+          {
+            "title": "China official statistical source (archived official page)",
+            "url": "https://web.archive.org/web/20190405093229id_/http://stats.gov.cn/tjsj/zxfb/201903/t20190327_1656417.html",
+            "locator": "27 March 2019 release; notes, indicator definitions, item 7; and registration-category note where relevant"
+          }
+        ],
+        "notes": "The source explanation refers to the declining weight of that registration type. This does not establish other motives or absence of related statistics from every other channel."
+      },
+      {
+        "id": "V03_EVT_VN_CPI_202610_NEW_RELEASE",
+        "title": "Vietnam: October CPI is a new reference month",
+        "group": "Vietnam",
+        "period": "October 2026; observed 3 November 2026",
+        "status": "New release verified",
+        "summary": "Two official releases report national October 2026 CPI inflation of 5.09% year on year. The same publications separately report 0.20% month on month and a 4.57% ten-month average. September’s 5.08% belongs to another reference month; the October value is not a revision to it.",
+        "facts": [
+          {
+            "label": "Selected measure",
+            "value": "National all-items CPI, year on year"
+          },
+          {
+            "label": "October 2026",
+            "value": "5.09%"
+          },
+          {
+            "label": "September 2026",
+            "value": "5.08%"
+          },
+          {
+            "label": "Observed at",
+            "value": "3 November 2026, 02:58:04 UTC"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Vietnam National Statistics Office release",
+            "url": "https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2026/11/chi-so-gia-tieu-dung-chi-so-gia-vang-va-chi-so-gia-do-la-my-thang-muoi-va-muoi-thang-nam-2026/",
+            "locator": "National CPI opening paragraph; publication-date widget; or national economic report CPI subsection"
+          },
+          {
+            "title": "Vietnam National Statistics Office release",
+            "url": "https://www.nso.gov.vn/bai-top/2026/11/bao-cao-tinh-hinh-kinh-te-xa-hoi-thang-muoi-va-10-thang-nam-2026/",
+            "locator": "National CPI opening paragraph; publication-date widget; or national economic report CPI subsection"
+          }
+        ],
+        "notes": "The publisher displays 3 November 2026 without a clock time. Capture time proves observation, not first public availability. The date-only calendar does not support an intraday delay verdict; national, regional, monthly and cumulative measures remain separate."
+      }
+    ]
+  },
+  {
+    "slug": "india-deposit-rates",
+    "title": "India Deposit Rate Monitor",
+    "domain": "Economy",
+    "version": "0.1",
+    "maturity": "Research preview",
+    "as_of": "2026-11-03",
+    "question": "Which deposit quotes are comparable, and what does each date actually establish?",
+    "description": "Research selected historical bank rate tables with customer, amount and tenor context attached to every quote.",
+    "coverage": [
+      {
+        "value": "6",
+        "label": "banks"
+      },
+      {
+        "value": "188",
+        "label": "accepted archive quote observations"
+      },
+      {
+        "value": "66",
+        "label": "candidate observations held"
+      },
+      {
+        "value": "44",
+        "label": "descriptive adjacent comparisons"
+      }
+    ],
+    "preview_scope": "Three selected cases. The full edition contains 254 candidates and selected domestic retail INR deposit buckets covering a nominal 365-day point, plus 12 historical RBI policy-rate points.",
+    "insight": "An Axis rate-card filename says 8 June, but the selected retail table states 18 May; both differ from the archive observation date.",
+    "limitations": [
+      "The 188 accepted observations include repeat captures; they are not 188 distinct rate changes.",
+      "The scope is general-public domestic retail INR deposits; original tenor labels and amount thresholds remain authoritative.",
+      "Sparse archives do not identify the first adjustment or prove that a dated PDF quote was active on its capture date.",
+      "Comparisons are descriptive; causal monetary-policy pass-through, personalized returns and investment recommendations are outside scope."
+    ],
+    "landing_path": "products/india-deposit-rates.html",
+    "records": [
+      {
+        "id": "IDR-C01",
+        "title": "SBI: the same posted-rate bucket moves from 6.50% to 6.25%",
+        "group": "SBI",
+        "period": "2025-05–2025-07 archives",
+        "status": "Descriptive quote comparison",
+        "summary": "Two SBI archive observations list 6.50% and 6.25% for the same general-public domestic INR deposit bucket: below INR 3 crore, one year to less than two years. The decrease is 0.25 percentage points.",
+        "facts": [
+          {
+            "label": "Archive observations",
+            "value": "31 May and 8 July 2025"
+          },
+          {
+            "label": "Selected-column applicability dates",
+            "value": "16 May and 15 June 2025"
+          },
+          {
+            "label": "Quoted rates",
+            "value": "6.50% → 6.25% per year"
+          },
+          {
+            "label": "Matched amount bucket",
+            "value": "Below INR 3 crore"
+          }
+        ],
+        "sources": [
+          {
+            "title": "SBI rate table (archived official page)",
+            "url": "https://web.archive.org/web/20250531062454id_/https://sbi.co.in/web/interest-rates/deposit-rates/retail-domestic-term-deposits",
+            "locator": "HTML table[0] tr[6] cell[2] (all zero-based); row=\"1 Year to less than 2 years\"; column=\"Revised Rates for Public w.e.f. 16/05/2025\""
+          },
+          {
+            "title": "SBI rate table (archived official page)",
+            "url": "https://web.archive.org/web/20250708075034id_/https://sbi.co.in/web/interest-rates/deposit-rates/retail-domestic-term-deposits",
+            "locator": "HTML table[0] tr[6] cell[2] (all zero-based); row=\"1 Year to less than 2 years\"; column=\"Revised Rates for Public w.e.f. 15/06/2025\""
+          }
+        ],
+        "notes": "Sparse observations do not identify the earliest actual adjustment. Column applicability dates do not prove when this tenor first changed. There is no causal policy pass-through or realized customer-rate inference; callability is not explicit in the selected table."
+      },
+      {
+        "id": "IDR-C02",
+        "title": "PNB: one year and 390 days have different quotes",
+        "group": "PNB",
+        "period": "2025-05 archive",
+        "status": "Within-document tenor comparison",
+        "summary": "The 26 May 2025 PNB archive lists 6.70% for one year, 6.80% for more than one year to 389 days, and 7.00% for 390 days in the same general-public Domestic/NRO table below INR 3 crore. Selecting the highest nearby-tenor rate would change the product being compared.",
+        "facts": [
+          {
+            "label": "One year",
+            "value": "6.70% per year"
+          },
+          {
+            "label": "More than one year to 389 days",
+            "value": "6.80% per year"
+          },
+          {
+            "label": "390 days",
+            "value": "7.00% per year"
+          },
+          {
+            "label": "Selected-column applicability date",
+            "value": "14 May 2025"
+          }
+        ],
+        "sources": [
+          {
+            "title": "PNB rate table (archived official page)",
+            "url": "https://web.archive.org/web/20250526170040id_/https://pnbindia.in/interest-rates-deposit.html",
+            "locator": "HTML table[16] tr[12–14] cell[2], all zero-based; Public column"
+          },
+          {
+            "title": "PNB rate table (archived official page)",
+            "url": "https://web.archive.org/web/20250526170040id_/https://pnbindia.in/interest-rates-deposit.html",
+            "locator": "HTML table[16] selected header: Revised Rates For Public w.e.f. 14.05.2025"
+          }
+        ],
+        "notes": "This is a comparison within one document, not a rate-change event. The panel uses a nominal 365-day point but retains the bank’s one-year label. A shared Domestic/NRO table does not establish terms for every non-resident product."
+      },
+      {
+        "id": "IDR-C03",
+        "title": "Axis: three dates in one archived rate card",
+        "group": "Axis Bank",
+        "period": "2023-06 archive",
+        "status": "Table-specific date interpretation",
+        "summary": "An Axis PDF named for 8 June 2023 was archived on 10 June. Its first-page retail table states applicability from 18 May and quotes 6.75% for general deposits below INR 2 crore, one year to one year and four days. The 8 June date on page 3 belongs to deposits of INR 5 crore and above.",
+        "facts": [
+          {
+            "label": "Selected retail table",
+            "value": "18 May 2023; 6.75% per year"
+          },
+          {
+            "label": "Filename and bulk-table date",
+            "value": "8 June 2023"
+          },
+          {
+            "label": "Archive observation",
+            "value": "10 June 2023"
+          },
+          {
+            "label": "Selected tenor",
+            "value": "One year to one year and four days"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Axis Bank rate table (archived official page)",
+            "url": "https://web.archive.org/web/20230610072057id_/https://www.axisbank.com/docs/default-source/default-document-library/interest-rates/domestic-fixed-deposits-08-jun-23.pdf",
+            "locator": "PDF physical page1, W.E.F.18/05/2023 heading; belowRs2crore column, row16"
+          },
+          {
+            "title": "Axis Bank rate table (archived official page)",
+            "url": "https://web.archive.org/web/20230610072057id_/https://www.axisbank.com/docs/default-source/default-document-library/interest-rates/domestic-fixed-deposits-08-jun-23.pdf",
+            "locator": "PDF physical page3, Deposits5crores&above heading, W.E.F.08/06/2023"
+          }
+        ],
+        "notes": "Saving a dated rate card on 10 June does not establish that its retail quote was active that day. The table date is not a proven first-change date. Different amount schedules are not successive versions of the same product."
+      }
+    ]
+  },
+  {
+    "slug": "education",
+    "title": "Curriculum Observatory",
+    "domain": "Education",
+    "version": "0.2",
+    "maturity": "Research preview",
+    "as_of": "2026-11-03",
+    "question": "What changed in a degree’s requirements, course content or approved options?",
+    "description": "Compare official curriculum versions with course-level evidence, conditions and document timing kept together.",
+    "coverage": [
+      {
+        "value": "20",
+        "label": "universities in the historical baseline"
+      },
+      {
+        "value": "6",
+        "label": "universities with detailed research"
+      },
+      {
+        "value": "29",
+        "label": "programme-document versions"
+      },
+      {
+        "value": "99",
+        "label": "selected course-version records"
+      }
+    ],
+    "preview_scope": "13 selected cases from six universities. Full-edition counts describe the underlying research, not the size of this public sample.",
+    "insight": "A course can gain a completion role without being newly created; a listed option can also carry a non-delivery notice.",
+    "limitations": [
+      "Selected official programme and course texts, not a census of all courses at these institutions.",
+      "Five institutions have five observed annual editions; MIT’s 2025/26 central annual programme rules remain a documented gap.",
+      "Catalogue wording and eligibility do not measure teaching, student uptake or learning outcomes.",
+      "Academic-year versions, entry cohorts and retrieval dates are distinct; credits stay in each institution’s own units."
+    ],
+    "landing_path": "products/education.html",
+    "records": [
+      {
+        "id": "edinburgh_mit::edinburgh_compulsory_data_science_continuity",
+        "title": "Machine learning inside a required data science course",
+        "group": "Edinburgh",
+        "period": "2022/23 → 2026/27",
+        "status": "Documented continuity",
+        "summary": "Across five observed editions, Edinburgh places INFR08030 in the second-year compulsory group. Its description includes supervised machine learning, inference and algorithmic bias. The separate INFR10086 Machine Learning course remains an option.",
+        "facts": [
+          {
+            "label": "Observed editions",
+            "value": "2022/23–2026/27; five editions"
+          },
+          {
+            "label": "Whole-course credit",
+            "value": "20 SCQF credits"
+          },
+          {
+            "label": "Requirement",
+            "value": "Second-year compulsory course"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Edinburgh official curriculum source — 2022/23",
+            "url": "https://www.drps.ed.ac.uk/22-23/dpt/cxinfr08030.htm",
+            "locator": "Course Outline / Summary; Course description; Course Delivery Information"
+          },
+          {
+            "title": "Edinburgh official curriculum source — 2022/23",
+            "url": "https://www.drps.ed.ac.uk/22_23_Archive_at_01-09-2022/dpt/cxinfr08030.htm",
+            "locator": "Course description; official dated archive 2022-09-01"
+          },
+          {
+            "title": "Edinburgh official curriculum source — 2022/23",
+            "url": "https://www.drps.ed.ac.uk/22-23/dpt/utcmpsi.htm",
+            "locator": "#dpt-year-2 + .dpt-container; group-order=1; card=3"
+          },
+          {
+            "title": "Edinburgh official curriculum source — 2023/24",
+            "url": "https://www.drps.ed.ac.uk/23-24/dpt/utcmpsi.htm",
+            "locator": "#dpt-year-2 + .dpt-container; group-order=1; card=3"
+          },
+          {
+            "title": "Edinburgh official curriculum source — 2024/25",
+            "url": "https://www.drps.ed.ac.uk/24-25/dpt/utcmpsi.htm",
+            "locator": "#dpt-year-2 + .dpt-container; group-order=1; card=3"
+          },
+          {
+            "title": "Edinburgh official curriculum source — 2026/27",
+            "url": "https://www.drps.ed.ac.uk/26-27/dpt/utcmpsi.htm",
+            "locator": "#dpt-year-2 + .dpt-container; group-order=1; card=3"
+          },
+          {
+            "title": "Edinburgh official curriculum source — 2026/27",
+            "url": "https://www.drps.ed.ac.uk/26-27/dpt/cxinfr08030.htm",
+            "locator": "Course Outline / Summary; Course description; Course Delivery Information"
+          },
+          {
+            "title": "Edinburgh official curriculum source — 2026/27",
+            "url": "https://www.drps.ed.ac.uk/26-27/dpt/utcmpsi.htm",
+            "locator": "#dpt-year-3 + .dpt-container; group-order=4; card=4 | #dpt-year-3 + .dpt-container; group-order=5; card=2 | #dpt-year-4 + .dpt-container; group-order=3; card=11"
+          },
+          {
+            "title": "Edinburgh official curriculum source — 2025/26",
+            "url": "https://www.drps.ed.ac.uk/25-26/dpt/utcmpsi.htm",
+            "locator": "#dpt-year-2 + .dpt-container div.panel-primary[1] .dpt-course-card[3] (1-based)"
+          },
+          {
+            "title": "Edinburgh official curriculum source — 2025/26",
+            "url": "https://www.drps.ed.ac.uk/25-26/dpt/cxinfr08030.htm",
+            "locator": "Course Outline / Summary and Course description"
+          }
+        ],
+        "notes": "The credits belong to the whole course, not exclusively to AI. Annual catalogue versions are not one entry cohort; teaching, student uptake and learning outcomes were not measured."
+      },
+      {
+        "id": "edinburgh_mit::edinburgh_group_project_choice_and_return",
+        "title": "A listed project option can have a non-delivery notice",
+        "group": "Edinburgh",
+        "period": "2022/23 → 2026/27",
+        "status": "Requirements and delivery status",
+        "summary": "Edinburgh lists SDP and EIP in a choose-20-credit project group through 2025/26, while the 2025/26 EIP page says it is not being delivered. In 2026/27, SDP is separately compulsory, with an approved Formula Student substitution route; EIP retains its non-delivery notice.",
+        "facts": [
+          {
+            "label": "Project group",
+            "value": "2023/24–2025/26"
+          },
+          {
+            "label": "SDP separately compulsory again",
+            "value": "2026/27"
+          },
+          {
+            "label": "EIP non-delivery notice observed",
+            "value": "2025/26 and 2026/27"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Edinburgh official curriculum source — 2022/23",
+            "url": "https://www.drps.ed.ac.uk/22-23/dpt/utcmpsi.htm",
+            "locator": "#dpt-year-3 + .dpt-container; group-order=1; card=1"
+          },
+          {
+            "title": "Edinburgh official curriculum source — 2023/24",
+            "url": "https://www.drps.ed.ac.uk/23-24/dpt/utcmpsi.htm",
+            "locator": "#dpt-year-3 + .dpt-container; group-order=3; card=1"
+          },
+          {
+            "title": "Edinburgh official curriculum source — 2024/25",
+            "url": "https://www.drps.ed.ac.uk/24-25/dpt/utcmpsi.htm",
+            "locator": "#dpt-year-3 + .dpt-container; group-order=3; card=2"
+          },
+          {
+            "title": "Edinburgh official curriculum source — 2026/27",
+            "url": "https://www.drps.ed.ac.uk/26-27/dpt/utcmpsi.htm",
+            "locator": "#dpt-year-3 + .dpt-container; group-order=1; card=4"
+          },
+          {
+            "title": "Edinburgh official curriculum source — 2023/24",
+            "url": "https://www.drps.ed.ac.uk/23-24/dpt/cxinfr09032.htm",
+            "locator": "Course Outline / Summary; Course description; Course Delivery Information"
+          },
+          {
+            "title": "Edinburgh official curriculum source — 2023/24",
+            "url": "https://www.drps.ed.ac.uk/23-24/dpt/cxinfr09053.htm",
+            "locator": "Course Outline / Summary; Course description; Course Delivery Information"
+          },
+          {
+            "title": "Edinburgh official curriculum source — 2026/27",
+            "url": "https://www.drps.ed.ac.uk/26-27/dpt/cxinfr09053.htm",
+            "locator": "Course Outline / Summary; Course description; Course Delivery Information"
+          },
+          {
+            "title": "Edinburgh official curriculum source — 2025/26",
+            "url": "https://www.drps.ed.ac.uk/25-26/dpt/utcmpsi.htm",
+            "locator": "#dpt-year-3 + .dpt-container div.panel-primary[2] .dpt-course-card[1] (1-based); Year3 Notes"
+          },
+          {
+            "title": "Edinburgh official curriculum source — 2025/26",
+            "url": "https://www.drps.ed.ac.uk/25-26/dpt/cxinfr09053.htm",
+            "locator": "Course Delivery Information"
+          }
+        ],
+        "notes": "Programme eligibility and delivery notices are different facts. A yearly notice does not establish permanent closure or actual teaching. The 2026/27 EIP page was retrieved again on 3 November 2026; it is not the earlier saved byte version."
+      },
+      {
+        "id": "edinburgh_mit::mit_software_design_llm_text",
+        "title": "MIT teaching plans mention LLMs before the latest catalogue sentence",
+        "group": "MIT",
+        "period": "2024-2025 → 2026-2027",
+        "status": "Description change",
+        "summary": "The official-linked Fall 2025 6.1040 course site already plans LLM-assisted design, coding and application agents, while the Fall 2025 Registrar description lacks that sentence. The verified 2026/27 central catalogue explicitly mentions LLM design and coding.",
+        "facts": [
+          {
+            "label": "Course",
+            "value": "6.1040 Software Design"
+          },
+          {
+            "label": "Earlier term-specific plan",
+            "value": "Fall 2025"
+          },
+          {
+            "label": "Latest central catalogue",
+            "value": "2026/27"
+          }
+        ],
+        "sources": [
+          {
+            "title": "MIT official curriculum source — 2022-2023",
+            "url": "https://catalog.mit.edu/archive/2022-2023/subjects/6/",
+            "locator": "#content .courseblock[6] (1-based; heading starts 6.1040) .courseblockdesc / .courseblockhours"
+          },
+          {
+            "title": "MIT official curriculum source — 2023-2024",
+            "url": "https://catalog.mit.edu/archive/2023-2024/subjects/6/",
+            "locator": "#content .courseblock[6] (1-based; heading starts 6.1040) .courseblockdesc / .courseblockhours"
+          },
+          {
+            "title": "MIT official curriculum source — 2024-2025",
+            "url": "https://catalog.mit.edu/archive/2024-2025/subjects/6/",
+            "locator": "#content .courseblock[6] (1-based; heading starts 6.1040) .courseblockdesc / .courseblockhours"
+          },
+          {
+            "title": "MIT official curriculum source — 2026-2027",
+            "url": "https://catalog.mit.edu/subjects/6/",
+            "locator": "#content .courseblock[7] (1-based; heading starts 6.1040) .courseblockdesc / .courseblockhours"
+          },
+          {
+            "title": "MIT official curriculum source — 2026-2027",
+            "url": "https://catalog.mit.edu/degree-charts/electrical-engineering-computer-science-tracks/",
+            "locator": "#content table.sc_courselist[5] tr[1] (1-based) | #content table.sc_courselist[6] tr[1] (1-based) | #content table.sc_courselist[18] tr[5] (1-based)"
+          },
+          {
+            "title": "MIT official curriculum source — 2026-2027",
+            "url": "https://catalog.mit.edu/degree-charts/eecs-subject-groupings/",
+            "locator": "#content table.sc_courselist[2] tr[1]; table.sc_courselist[4] tr[1] (1-based)"
+          },
+          {
+            "title": "MIT official curriculum source — 2026-2027",
+            "url": "https://catalog.mit.edu/images/mit-bulletin-logo-26-27.png",
+            "locator": "Entire saved PNG; visually inspected"
+          },
+          {
+            "title": "MIT official curriculum source — 2025-2026",
+            "url": "https://websis.mit.edu/catalog/archive/fall/m6a.html",
+            "locator": "h3 starts6.1040; following description and Units line"
+          },
+          {
+            "title": "MIT official curriculum source — 2025-2026",
+            "url": "https://61040-fa25.github.io/",
+            "locator": "main welcome paragraphs; visible Fall2025 heading"
+          },
+          {
+            "title": "MIT official curriculum source — 2025-2026",
+            "url": "https://61040-fa25.github.io/faq",
+            "locator": "How will this year’s class differ from last year’s?"
+          },
+          {
+            "title": "MIT official curriculum source — accessed_2026-11-03",
+            "url": "https://people.csail.mit.edu/dnj/",
+            "locator": "Teaching section a[href=\"https://61040-fa25.github.io/\"]"
+          },
+          {
+            "title": "MIT official curriculum source — 2025-2026",
+            "url": "https://hci.csail.mit.edu/",
+            "locator": "Classes / 6.1040 Software Design / Fall2025"
+          }
+        ],
+        "notes": "This establishes public plans at different document levels, not first classroom adoption. The 2025/26 annual programme rules remain missing. The latest catalogue has a 15-versus-18-unit discrepancy between tables; 6.1040 is a conditional option, not universally required."
+      },
+      {
+        "id": "edinburgh_mit::mit_machine_learning_optimization_reframing",
+        "title": "A machine learning description changes its organizing emphasis",
+        "group": "MIT",
+        "period": "2023-2024 → 2024-2025",
+        "status": "Description change",
+        "summary": "MIT 6.3900 changes from prediction-oriented wording in 2023/24 to an optimization-oriented description in 2024/25, explicitly listing supervised, unsupervised and reinforcement learning. The core wording continues in the Fall 2025 Registrar archive and 2026/27 catalogue.",
+        "facts": [
+          {
+            "label": "Course",
+            "value": "6.3900"
+          },
+          {
+            "label": "Observed wording interval",
+            "value": "2023/24 → 2024/25"
+          },
+          {
+            "label": "Course total",
+            "value": "12 MIT units in the observed versions"
+          }
+        ],
+        "sources": [
+          {
+            "title": "MIT official curriculum source — 2023-2024",
+            "url": "https://catalog.mit.edu/archive/2023-2024/subjects/6/",
+            "locator": "#content .courseblock[158] (1-based; heading starts 6.3900) .courseblockdesc / .courseblockhours"
+          },
+          {
+            "title": "MIT official curriculum source — 2024-2025",
+            "url": "https://catalog.mit.edu/archive/2024-2025/subjects/6/",
+            "locator": "#content .courseblock[157] (1-based; heading starts 6.3900) .courseblockdesc / .courseblockhours"
+          },
+          {
+            "title": "MIT official curriculum source — 2026-2027",
+            "url": "https://catalog.mit.edu/subjects/6/",
+            "locator": "#content .courseblock[174] (1-based; heading starts 6.3900) .courseblockdesc / .courseblockhours"
+          },
+          {
+            "title": "MIT official curriculum source — 2024-2025",
+            "url": "https://catalog.mit.edu/archive/2024-2025/degree-charts/electrical-engineering-computer-science-tracks/",
+            "locator": "#content table.sc_courselist[2] tr[8] (1-based) | #content table.sc_courselist[20] tr[5] (1-based)"
+          },
+          {
+            "title": "MIT official curriculum source — 2025-2026",
+            "url": "https://websis.mit.edu/catalog/archive/fall/m6c.html",
+            "locator": "h3 starts6.3900; following description / Units"
+          }
+        ],
+        "notes": "New wording does not establish first classroom use or prove that earlier teaching omitted the topic. This course is an option within programme tracks, not an individually required course for every 6-3 student."
+      },
+      {
+        "id": "edinburgh_mit::mit_explicit_ai_list_requirement",
+        "title": "An AI-list condition needs an applicability check",
+        "group": "MIT",
+        "period": "2024-2025 → 2026-2027",
+        "status": "Applicability unresolved",
+        "summary": "The verified 2026/27 central MIT 6-3 catalogue requires at least two AUS subjects and at least 12 units from its AI Subjects list. The departmental 6-3_2025 rules page, labelled for entrants from Fall 2025, still specifies Independent Inquiry constraints. These official source layers do not yet establish one rule for an individual student.",
+        "facts": [
+          {
+            "label": "Central catalogue condition",
+            "value": "At least 12 MIT units from AI Subjects"
+          },
+          {
+            "label": "Comparison editions",
+            "value": "2024/25 → 2026/27"
+          },
+          {
+            "label": "Decision",
+            "value": "Applicability unresolved"
+          }
+        ],
+        "sources": [
+          {
+            "title": "MIT official curriculum source — 2023-2024",
+            "url": "https://catalog.mit.edu/archive/2023-2024/degree-charts/computer-science-engineering-course-6-3/",
+            "locator": "#content table.sc_footnotes tr[1] (1-based)"
+          },
+          {
+            "title": "MIT official curriculum source — 2024-2025",
+            "url": "https://catalog.mit.edu/archive/2024-2025/degree-charts/computer-science-engineering-course-6-3/",
+            "locator": "#content table.sc_footnotes tr[1] (1-based)"
+          },
+          {
+            "title": "MIT official curriculum source — 2026-2027",
+            "url": "https://catalog.mit.edu/degree-charts/computer-science-engineering-course-6-3/",
+            "locator": "#content table.sc_footnotes tr[2] (1-based)"
+          },
+          {
+            "title": "MIT official curriculum source — 2026-2027",
+            "url": "https://catalog.mit.edu/degree-charts/electrical-engineering-computer-science-tracks/",
+            "locator": "#artificialintelligencedecisionmakingtextcontainer"
+          },
+          {
+            "title": "MIT official curriculum source — 2026-2027",
+            "url": "https://catalog.mit.edu/images/mit-bulletin-logo-26-27.png",
+            "locator": "Entire saved PNG; visually inspected"
+          },
+          {
+            "title": "MIT official curriculum source — accessed_2026-11-03",
+            "url": "https://catalog.mit.edu/archive/",
+            "locator": "#content archive year list"
+          },
+          {
+            "title": "MIT official curriculum source — programme_6-3_2025",
+            "url": "https://eecsis.mit.edu/degree_requirements.pcgi?program=6-3_2025",
+            "locator": "Degree Requirements for6-3_2025 / Additional constraints / Notes"
+          },
+          {
+            "title": "MIT official curriculum source — programme_6-3_2022",
+            "url": "https://eecsis.mit.edu/degree_requirements.pcgi?program=6-3_2022",
+            "locator": "Degree Requirements for6-3_2022 / Additional constraints / Notes"
+          }
+        ],
+        "notes": "The 12 units constrain chosen courses rather than adding 12 units to the programme total, and the list includes broad theoretical subjects. The departmental page was retrieved in 2026 and lists Spring 2027 candidates; it is not a 2025/26 archive."
+      },
+      {
+        "id": "cmu_wisc::cmu_ai_category_persists_choices_change",
+        "title": "CMU keeps the AI category while changing its options",
+        "group": "Carnegie Mellon",
+        "period": "2022-23 → 2026-27",
+        "status": "Stable category; changing options",
+        "summary": "Five observed CMU editions keep a requirement to choose one course from the AI category, with a minimum of 9 CMU units. The 2025/26 named list includes 07-280 and 10-301 and no longer lists 10-315; 15-281 is still listed then but absent in 2026/27, which includes 16-280.",
+        "facts": [
+          {
+            "label": "Observed editions",
+            "value": "2022/23–2026/27"
+          },
+          {
+            "label": "Category minimum",
+            "value": "One course; at least 9 CMU units"
+          },
+          {
+            "label": "15-281 latest description",
+            "value": "Still present in the catalogue"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Carnegie Mellon official curriculum source — 2022-23",
+            "url": "https://coursecatalog.web.cmu.edu/previous/2022-2023/schools-colleges/schoolofcomputerscience/undergraduatecomputerscience/",
+            "locator": "#bscurriculumtextcontainer table.sc_courselist[2] (1-based)"
+          },
+          {
+            "title": "Carnegie Mellon official curriculum source — 2023-24",
+            "url": "https://coursecatalog.web.cmu.edu/previous/2023-2024/schools-colleges/schoolofcomputerscience/undergraduatecomputerscience/",
+            "locator": "#bscurriculumtextcontainer table.sc_courselist[2] (1-based)"
+          },
+          {
+            "title": "Carnegie Mellon official curriculum source — 2024-25",
+            "url": "https://coursecatalog.web.cmu.edu/previous/2024-2025/schools-colleges/schoolofcomputerscience/undergraduatecomputerscience/",
+            "locator": "#bscurriculumtextcontainer table.sc_courselist[2] (1-based)"
+          },
+          {
+            "title": "Carnegie Mellon official curriculum source — 2026-27",
+            "url": "https://coursecatalog.web.cmu.edu/schools-colleges/schoolofcomputerscience/undergraduatecomputerscience/computer-science-bs/",
+            "locator": "#curriculumtextcontainer table.sc_courselist[2] (1-based)"
+          },
+          {
+            "title": "Carnegie Mellon official curriculum source — 2026-27",
+            "url": "https://coursecatalog.web.cmu.edu/schools-colleges/schoolofcomputerscience/courses/",
+            "locator": "dl.courseblock[76] dt starts \"15-281 \" + dd (1-based)"
+          },
+          {
+            "title": "Carnegie Mellon official curriculum source — 2022-23",
+            "url": "https://coursecatalog.web.cmu.edu/previous/2022-2023/schools-colleges/schoolofcomputerscience/undergraduatecomputerscience/",
+            "locator": "#bscurriculumtextcontainer > p: first applicability paragraph"
+          },
+          {
+            "title": "Carnegie Mellon official curriculum source — 2023-24",
+            "url": "https://coursecatalog.web.cmu.edu/previous/2023-2024/schools-colleges/schoolofcomputerscience/undergraduatecomputerscience/",
+            "locator": "#bscurriculumtextcontainer > p: first applicability paragraph"
+          },
+          {
+            "title": "Carnegie Mellon official curriculum source — 2024-25",
+            "url": "https://coursecatalog.web.cmu.edu/previous/2024-2025/schools-colleges/schoolofcomputerscience/undergraduatecomputerscience/",
+            "locator": "#bscurriculumtextcontainer > p: first applicability paragraph"
+          },
+          {
+            "title": "Carnegie Mellon official curriculum source — 2026-27",
+            "url": "https://coursecatalog.web.cmu.edu/schools-colleges/schoolofcomputerscience/undergraduatecomputerscience/computer-science-bs/",
+            "locator": "#curriculumtextcontainer > p: first applicability paragraph"
+          },
+          {
+            "title": "Carnegie Mellon official curriculum source — 2025-26",
+            "url": "https://coursecatalog.web.cmu.edu/previous/2025-2026/schools-colleges/schoolofcomputerscience/undergraduatecomputerscience/",
+            "locator": "#bscurriculumtextcontainer table.sc_courselist[2] (1-based)"
+          },
+          {
+            "title": "Carnegie Mellon official curriculum source — 2025-26",
+            "url": "https://coursecatalog.web.cmu.edu/previous/2025-2026/schools-colleges/schoolofcomputerscience/undergraduatecomputerscience/",
+            "locator": "#bscurriculumtextcontainer > p: first applicability paragraph"
+          }
+        ],
+        "notes": "Absence from this category does not establish course closure or general elective ineligibility. Approved unnamed alternatives existed in earlier rules; 15-382 carries a Qatar-only note in the last two editions. Edition labels and entry-cohort applicability differ."
+      },
+      {
+        "id": "cmu_wisc::cmu_programming_units_description_boundary",
+        "title": "More units do not by themselves establish new content",
+        "group": "Carnegie Mellon",
+        "period": "2022-23 → 2023-24",
+        "status": "Credit change",
+        "summary": "CMU 15-122 and 15-150 each move from 10 units in 2022/23 to 12 units in 2023/24, remaining in the all-required CS core. Their main catalogue descriptions are unchanged after whitespace normalization and removal of separate metadata fields. Both retain 12 units through 2026/27.",
+        "facts": [
+          {
+            "label": "Courses",
+            "value": "15-122 and 15-150"
+          },
+          {
+            "label": "Units per course",
+            "value": "10 → 12 CMU units"
+          },
+          {
+            "label": "Observed change",
+            "value": "2022/23 → 2023/24"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Carnegie Mellon official curriculum source — 2022-23",
+            "url": "https://coursecatalog.web.cmu.edu/previous/2022-2023/schools-colleges/schoolofcomputerscience/undergraduatecomputerscience/",
+            "locator": "#bscurriculumtextcontainer table.sc_courselist[1] (1-based)"
+          },
+          {
+            "title": "Carnegie Mellon official curriculum source — 2023-24",
+            "url": "https://coursecatalog.web.cmu.edu/previous/2023-2024/schools-colleges/schoolofcomputerscience/undergraduatecomputerscience/",
+            "locator": "#bscurriculumtextcontainer table.sc_courselist[1] (1-based)"
+          },
+          {
+            "title": "Carnegie Mellon official curriculum source — 2022-23",
+            "url": "https://coursecatalog.web.cmu.edu/previous/2022-2023/schools-colleges/schoolofcomputerscience/undergraduatecomputerscience/",
+            "locator": "dl.courseblock[8] dt starts \"15-122 \" + dd (1-based)"
+          },
+          {
+            "title": "Carnegie Mellon official curriculum source — 2023-24",
+            "url": "https://coursecatalog.web.cmu.edu/previous/2023-2024/schools-colleges/schoolofcomputerscience/undergraduatecomputerscience/",
+            "locator": "dl.courseblock[8] dt starts \"15-122 \" + dd (1-based)"
+          },
+          {
+            "title": "Carnegie Mellon official curriculum source — 2022-23",
+            "url": "https://coursecatalog.web.cmu.edu/previous/2022-2023/schools-colleges/schoolofcomputerscience/undergraduatecomputerscience/",
+            "locator": "dl.courseblock[12] dt starts \"15-150 \" + dd (1-based)"
+          },
+          {
+            "title": "Carnegie Mellon official curriculum source — 2023-24",
+            "url": "https://coursecatalog.web.cmu.edu/previous/2023-2024/schools-colleges/schoolofcomputerscience/undergraduatecomputerscience/",
+            "locator": "dl.courseblock[12] dt starts \"15-150 \" + dd (1-based)"
+          },
+          {
+            "title": "Carnegie Mellon official curriculum source — 2024-25",
+            "url": "https://coursecatalog.web.cmu.edu/previous/2024-2025/schools-colleges/schoolofcomputerscience/undergraduatecomputerscience/",
+            "locator": "#bscurriculumtextcontainer table.sc_courselist[1] (1-based)"
+          },
+          {
+            "title": "Carnegie Mellon official curriculum source — 2026-27",
+            "url": "https://coursecatalog.web.cmu.edu/schools-colleges/schoolofcomputerscience/undergraduatecomputerscience/computer-science-bs/",
+            "locator": "#curriculumtextcontainer table.sc_courselist[1] (1-based)"
+          },
+          {
+            "title": "Carnegie Mellon official curriculum source — 2025-26",
+            "url": "https://coursecatalog.web.cmu.edu/previous/2025-2026/schools-colleges/schoolofcomputerscience/undergraduatecomputerscience/",
+            "locator": "#bscurriculumtextcontainer table.sc_courselist[1] (1-based)"
+          }
+        ],
+        "notes": "The comparison covers main descriptions, not assignments, prerequisites or classroom delivery. Institutional credit systems are not converted or summed across universities."
+      },
+      {
+        "id": "cmu_wisc::wisc_math_group_restructured_2024",
+        "title": "A broad mathematics list becomes two separate groups",
+        "group": "UW–Madison",
+        "period": "2023-24 → 2024-25",
+        "status": "Requirement structure change",
+        "summary": "UW–Madison CS BS changes its additional mathematics requirement from two courses in a broad list to one Linear Algebra choice and one Probability or Statistics choice in 2024/25. Both groups remain in 2025/26 and 2026/27.",
+        "facts": [
+          {
+            "label": "Observed change",
+            "value": "2023/24 → 2024/25"
+          },
+          {
+            "label": "Earlier minimum",
+            "value": "Two courses; at least 6 credits"
+          },
+          {
+            "label": "Continuing options",
+            "value": "MATH 340 and STAT 324"
+          }
+        ],
+        "sources": [
+          {
+            "title": "UW–Madison official curriculum source — 2022-23",
+            "url": "https://guide.wisc.edu/archive/2022-2023/undergraduate/letters-science/computer-sciences/computer-sciences-bs/",
+            "locator": "#requirementstextcontainer table.sc_courselist[3] (1-based)"
+          },
+          {
+            "title": "UW–Madison official curriculum source — 2023-24",
+            "url": "https://guide.wisc.edu/archive/2023-2024/undergraduate/letters-science/computer-sciences/computer-sciences-bs/",
+            "locator": "#requirementstextcontainer table.sc_courselist[3] (1-based)"
+          },
+          {
+            "title": "UW–Madison official curriculum source — 2024-25",
+            "url": "https://guide.wisc.edu/archive/2024-2025/undergraduate/letters-science/computer-sciences/computer-sciences-bs/",
+            "locator": "#requirementstextcontainer table.sc_courselist[3] (1-based)"
+          },
+          {
+            "title": "UW–Madison official curriculum source — 2024-25",
+            "url": "https://guide.wisc.edu/archive/2024-2025/undergraduate/letters-science/computer-sciences/computer-sciences-bs/",
+            "locator": "#requirementstextcontainer table.sc_courselist[4] (1-based)"
+          },
+          {
+            "title": "UW–Madison official curriculum source — 2026-27",
+            "url": "https://guide.wisc.edu/undergraduate/letters-science/computer-sciences/computer-sciences-bs/",
+            "locator": "#requirementstextcontainer table.sc_courselist[3] (1-based)"
+          },
+          {
+            "title": "UW–Madison official curriculum source — 2026-27",
+            "url": "https://guide.wisc.edu/undergraduate/letters-science/computer-sciences/computer-sciences-bs/",
+            "locator": "#requirementstextcontainer table.sc_courselist[4] (1-based)"
+          },
+          {
+            "title": "UW–Madison official curriculum source — current index",
+            "url": "https://guide.wisc.edu/archive/",
+            "locator": "#textcontainer: Guides, headings 2022-2023 / 2023-2024 / 2024-2025 and Summer HTML links"
+          },
+          {
+            "title": "UW–Madison official curriculum source — 2025-26",
+            "url": "https://guide.wisc.edu/archive/2025-2026/undergraduate/letters-science/computer-sciences/computer-sciences-bs/",
+            "locator": "#requirementstextcontainer table.sc_courselist[3] (1-based); #requirementstextcontainer table.sc_courselist[4] (1-based)"
+          },
+          {
+            "title": "UW–Madison official curriculum source — current index",
+            "url": "https://guide.wisc.edu/archive/",
+            "locator": "#textcontainer: 2025-2026 > Summer 2026 HTML link"
+          }
+        ],
+        "notes": "These courses are options within groups, not individually compulsory. MATH 375 substitution and duplicate-credit restrictions still apply. Historical Guide pages are summer archives; the comparison does not identify the approval date or affected entry cohort."
+      },
+      {
+        "id": "cmu_wisc::wisc_stat324_r_explicit_description",
+        "title": "R becomes explicit in a statistics course description",
+        "group": "UW–Madison",
+        "period": "2023-24 → 2024-25",
+        "status": "Description change",
+        "summary": "UW–Madison STAT 324 adds an explicit R-programming statement in the 2024/25 description while retaining its earlier statistics topics. That statement remains in 2025/26 and 2026/27; the course stays an option in the CS mathematics requirement.",
+        "facts": [
+          {
+            "label": "Observed wording interval",
+            "value": "2023/24 → 2024/25"
+          },
+          {
+            "label": "Course",
+            "value": "STAT 324"
+          },
+          {
+            "label": "Whole-course credit",
+            "value": "3 UW–Madison credits"
+          }
+        ],
+        "sources": [
+          {
+            "title": "UW–Madison official curriculum source — 2023-24",
+            "url": "https://guide.wisc.edu/archive/2023-2024/courses/stat/",
+            "locator": "div.courseblock[11] .courseblockcode=\"STAT 324\"; .courseblockdesc (1-based)"
+          },
+          {
+            "title": "UW–Madison official curriculum source — 2024-25",
+            "url": "https://guide.wisc.edu/archive/2024-2025/courses/stat/",
+            "locator": "div.courseblock[10] .courseblockcode=\"STAT 324\"; .courseblockdesc (1-based)"
+          },
+          {
+            "title": "UW–Madison official curriculum source — 2026-27",
+            "url": "https://guide.wisc.edu/courses/stat/",
+            "locator": "div.courseblock[10] .courseblockcode=\"STAT 324\"; .courseblockdesc (1-based)"
+          },
+          {
+            "title": "UW–Madison official curriculum source — 2023-24",
+            "url": "https://guide.wisc.edu/archive/2023-2024/undergraduate/letters-science/computer-sciences/computer-sciences-bs/",
+            "locator": "#requirementstextcontainer table.sc_courselist[3] (1-based)"
+          },
+          {
+            "title": "UW–Madison official curriculum source — 2024-25",
+            "url": "https://guide.wisc.edu/archive/2024-2025/undergraduate/letters-science/computer-sciences/computer-sciences-bs/",
+            "locator": "#requirementstextcontainer table.sc_courselist[4] (1-based)"
+          },
+          {
+            "title": "UW–Madison official curriculum source — 2025-26",
+            "url": "https://guide.wisc.edu/archive/2025-2026/courses/stat/",
+            "locator": "div.courseblock[10] .courseblockcode=\"STAT 324\"; .courseblockdesc (1-based)"
+          },
+          {
+            "title": "UW–Madison official curriculum source — 2025-26",
+            "url": "https://guide.wisc.edu/archive/2025-2026/undergraduate/letters-science/computer-sciences/computer-sciences-bs/",
+            "locator": "#requirementstextcontainer table.sc_courselist[4] (1-based)"
+          },
+          {
+            "title": "UW–Madison official curriculum source — 2022-23",
+            "url": "https://guide.wisc.edu/archive/2022-2023/courses/stat/",
+            "locator": "div.courseblock[11] .courseblockcode=\"STAT 324\"; .courseblockdesc (1-based)"
+          }
+        ],
+        "notes": "Wording establishes neither first classroom use of R nor three credits devoted solely to R. Historical pages are summer archives. The 2026/27 page was retrieved again on 3 November 2026, with the relevant wording and credit checked."
+      },
+      {
+        "id": "waterloo_toronto::WT-W-01",
+        "title": "An explicit alternative can document an existing permission",
+        "group": "Waterloo",
+        "period": "2022-2023 → 2023-2024",
+        "status": "Rule clarification",
+        "summary": "Waterloo BCS names CS 240 or CS 240E and CS 241 or CS 241E explicitly in its 2023/24 programme table. The 2022/23 course catalogue already allowed the enriched courses to replace the standard courses wherever required. The explicit alternatives persist through 2026/27.",
+        "facts": [
+          {
+            "label": "Programme wording change",
+            "value": "2022/23 → 2023/24"
+          },
+          {
+            "label": "Existing substitution evidence",
+            "value": "2022/23 course catalogue"
+          },
+          {
+            "label": "Pairs checked",
+            "value": "CS 240/240E and CS 241/241E"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Waterloo official curriculum source — 2022-2023",
+            "url": "https://academic-calendar-archive.uwaterloo.ca/undergraduate-studies/2022-2023/page/MATH-Bachelor-of-Computer-Science-1.html",
+            "locator": "#ctl00_contentMain_lblContent core course list: CS240 and CS241"
+          },
+          {
+            "title": "Waterloo official curriculum source — 2023-2024",
+            "url": "https://academic-calendar-archive.uwaterloo.ca/undergraduate-studies/2023-2024/page/MATH-Bachelor-of-Computer-Science-1.html",
+            "locator": "#ctl00_contentMain_lblContent core course list: CS240/240E and CS241/241E"
+          },
+          {
+            "title": "Waterloo official curriculum source — 2022-2023",
+            "url": "https://ucalendar.uwaterloo.ca/2223/COURSE/course-CS.html",
+            "locator": "a[name=\"CS240E\"] ancestor center, Note"
+          },
+          {
+            "title": "Waterloo official curriculum source — 2022-2023",
+            "url": "https://ucalendar.uwaterloo.ca/2223/COURSE/course-CS.html",
+            "locator": "a[name=\"CS241E\"] ancestor center, Note"
+          },
+          {
+            "title": "Waterloo official curriculum source — 2024-2025",
+            "url": "https://uwaterloocm.kuali.co/api/v1/catalog/program/657084224811c0001ce0fd94/SJPJkCAih",
+            "locator": "JSON $.courseRequirementsNoUnits, each CS240/240E and CS241/241E Complete1 group"
+          },
+          {
+            "title": "Waterloo official curriculum source — 2025-2026",
+            "url": "https://uwaterloocm.kuali.co/api/v1/catalog/program/663290e835aff7001cc62323/SJPJkCAih",
+            "locator": "JSON $.courseRequirementsNoUnits, each CS240/240E and CS241/241E Complete1 group"
+          },
+          {
+            "title": "Waterloo official curriculum source — 2026-2027",
+            "url": "https://uwaterloocm.kuali.co/api/v1/catalog/program/67e557ed6ed2fe2bd3a38956/SJPJkCAih",
+            "locator": "JSON $.courseRequirementsNoUnits, each CS240/240E and CS241/241E Complete1 group"
+          }
+        ],
+        "notes": "The wording change is not evidence that the courses or substitution rights were newly created. Entry, prerequisite and offering conditions remain relevant; this finding is limited to these two pairs."
+      },
+      {
+        "id": "waterloo_toronto::WT-W-02",
+        "title": "Non-mathematics electives are reorganized in Waterloo BCS",
+        "group": "Waterloo",
+        "period": "2025-2026 → 2026-2027",
+        "status": "Requirement structure change",
+        "summary": "The 2025/26 BCS still uses the earlier breadth-and-depth structure. The 2026/27 version organizes 4.0 elective units into a 1.0 + 1.0 + 2.0 distribution, including at least 1.0 unit at the 200 level or above and no double counting with the degree communication requirement. Both retain at least 5.0 non-mathematics units and two communication courses.",
+        "facts": [
+          {
+            "label": "Narrowed version interval",
+            "value": "2025/26 → 2026/27"
+          },
+          {
+            "label": "Reorganized elective subset",
+            "value": "4.0 Waterloo units"
+          },
+          {
+            "label": "Parent minimum retained",
+            "value": "At least 5.0 non-mathematics units"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Waterloo official curriculum source — 2024-2025",
+            "url": "https://uwaterloocm.kuali.co/api/v1/catalog/program/657084224811c0001ce0fd94/SJPJkCAih",
+            "locator": "JSON $.graduationRequirements: Breadth and Depth Requirement; $.courseRequirementsNoUnits [data-test=\"ruleView-B\"]"
+          },
+          {
+            "title": "Waterloo official curriculum source — 2026-2027",
+            "url": "https://uwaterloocm.kuali.co/api/v1/catalog/program/67e557ed6ed2fe2bd3a38956/SJPJkCAih",
+            "locator": "JSON $.courseRequirementsNoUnits [data-test=\"ruleView-B.1\"], [data-test=\"ruleView-B.3\"], [data-test=\"ruleView-B.2\"]; $.additionalConstraints; $.graduationRequirements"
+          },
+          {
+            "title": "Waterloo official curriculum source — 2024-2025",
+            "url": "https://uwaterloocm.kuali.co/api/v1/catalog/program/657084224811c0001ce0fd94/r1y1WO5ka",
+            "locator": "JSON $.degreeRequirements > Undergraduate Communication Requirement"
+          },
+          {
+            "title": "Waterloo official curriculum source — 2026-2027",
+            "url": "https://uwaterloocm.kuali.co/api/v1/catalog/program/67e557ed6ed2fe2bd3a38956/r1y1WO5ka",
+            "locator": "JSON $.degreeRequirements > Undergraduate Communication Requirement"
+          },
+          {
+            "title": "Waterloo official curriculum source — 2024-2025",
+            "url": "https://uwaterloocm.kuali.co/api/v1/catalog/public/catalogs/657084224811c0001ce0fd94",
+            "locator": "JSON $.title"
+          },
+          {
+            "title": "Waterloo official curriculum source — 2026-2027",
+            "url": "https://uwaterloocm.kuali.co/api/v1/catalog/public/catalogs/67e557ed6ed2fe2bd3a38956",
+            "locator": "JSON $.title"
+          },
+          {
+            "title": "Waterloo official curriculum source — 2022-2023",
+            "url": "https://academic-calendar-archive.uwaterloo.ca/undergraduate-studies/2022-2023/page/MATH-Bachelor-of-Computer-Science-1.html",
+            "locator": "#ctl00_contentMain_lblContent > Elective breadth/depth requirements and notes"
+          },
+          {
+            "title": "Waterloo official curriculum source — 2023-2024",
+            "url": "https://academic-calendar-archive.uwaterloo.ca/undergraduate-studies/2023-2024/page/MATH-Bachelor-of-Computer-Science-1.html",
+            "locator": "#ctl00_contentMain_lblContent > Elective breadth/depth requirements and notes"
+          },
+          {
+            "title": "Waterloo official curriculum source — 2025-2026",
+            "url": "https://uwaterloocm.kuali.co/api/v1/catalog/program/663290e835aff7001cc62323/SJPJkCAih",
+            "locator": "JSON $.graduationRequirements, $.courseRequirementsNoUnits, $.additionalConstraints"
+          },
+          {
+            "title": "Waterloo official curriculum source — 2025-2026",
+            "url": "https://uwaterloocm.kuali.co/api/v1/catalog/program/663290e835aff7001cc62323/r1y1WO5ka",
+            "locator": "JSON $.degreeRequirements > Undergraduate Communication Requirement"
+          },
+          {
+            "title": "Waterloo official curriculum source — 2025-2026",
+            "url": "https://uwaterloocm.kuali.co/api/v1/catalog/public/catalogs/663290e835aff7001cc62323",
+            "locator": "JSON $.title"
+          }
+        ],
+        "notes": "The first 1.0 unit is from Arts or BET/BUS/COMM/STV; the next 1.0 is from Environment/Health/Science; the remaining 2.0 uses those ranges. These are observed document versions, not exact implementation dates or proof of outcomes."
+      },
+      {
+        "id": "waterloo_toronto::WT-T-01",
+        "title": "Toronto changes which courses count within an unchanged total",
+        "group": "Toronto",
+        "period": "2023-2024 → 2024-2025",
+        "status": "Eligibility and credit constraints",
+        "summary": "The St George CS Major keeps its 3.0-credit Later years module while narrowing its 200-level CSC list in 2024/25 to CSC209H1, CSC299H1 and CSC299Y1. It also explicitly states two separate 0.5-credit caps, for CSC412H1/STA414H1 and CSC438H1/MAT309H1. These features remain after a later regrouping.",
+        "facts": [
+          {
+            "label": "Observed change",
+            "value": "2023/24 → 2024/25"
+          },
+          {
+            "label": "Major total",
+            "value": "8.0 credits"
+          },
+          {
+            "label": "Later years module",
+            "value": "3.0 credits"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Toronto official curriculum source — 2023-2024",
+            "url": "https://artsci.calendar.utoronto.ca/sites/default/files/PDFs/2023-24_ARTSCI_Calendar.pdf",
+            "locator": "PDF/printed pages 287-288, ASMAJ1689 Completion Requirements > Later years (3.0 credits)"
+          },
+          {
+            "title": "Toronto official curriculum source — 2024-2025",
+            "url": "https://artsci.calendar.utoronto.ca/sites/default/files/PDFs/2024-25_ARTSCI_Calendar.pdf",
+            "locator": "PDF/printed page 292, ASMAJ1689 Later years and These 3.0 credits must include"
+          },
+          {
+            "title": "Toronto official curriculum source — 2022-2023",
+            "url": "https://artsci.calendar.utoronto.ca/sites/default/files/PDFs/2022-23_ARTSCI_Calendar.pdf",
+            "locator": "PDF/printed page280 > Later years"
+          },
+          {
+            "title": "Toronto official curriculum source — 2025-2026",
+            "url": "https://artsci.calendar.utoronto.ca/sites/default/files/PDFs/2025-26_ARTSCI_Calendar.pdf",
+            "locator": "PDF/printed pages306-307 > Later years"
+          },
+          {
+            "title": "Toronto official curriculum source — 2026-2027",
+            "url": "https://artsci.calendar.utoronto.ca/program/asmaj1689",
+            "locator": "Completion Requirements > Later years > Later years"
+          }
+        ],
+        "notes": "Other 200-level courses are not thereby abolished or excluded from all other requirements. Earlier omission of these caps from this paragraph does not override other exclusion rules. Groups A/B/C and other conditions also change in later versions."
+      },
+      {
+        "id": "waterloo_toronto::WT-T-02",
+        "title": "An existing deep learning course gains a new completion role",
+        "group": "Toronto",
+        "period": "2022-2023 → 2023-2024",
+        "status": "Approved option change",
+        "summary": "Toronto adds CSC302H1 and CSC413H1 to the CS Major integrative inquiry-based activity list in 2023/24. Both courses already existed in 2022/23, when CSC413H1 already described deep learning. Their main descriptions are unchanged across that interval, and both remain listed as options through 2026/27.",
+        "facts": [
+          {
+            "label": "Observed approval-list change",
+            "value": "2022/23 → 2023/24"
+          },
+          {
+            "label": "Courses",
+            "value": "CSC302H1 and CSC413H1"
+          },
+          {
+            "label": "Requirement role",
+            "value": "Optional route to the integrative activity"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Toronto official curriculum source — 2022-2023",
+            "url": "https://artsci.calendar.utoronto.ca/sites/default/files/PDFs/2022-23_ARTSCI_Calendar.pdf",
+            "locator": "PDF/printed page 280, ASMAJ1689 integrative inquiry-based activity paragraph"
+          },
+          {
+            "title": "Toronto official curriculum source — 2023-2024",
+            "url": "https://artsci.calendar.utoronto.ca/sites/default/files/PDFs/2023-24_ARTSCI_Calendar.pdf",
+            "locator": "PDF/printed page 288, ASMAJ1689 integrative inquiry-based activity paragraph"
+          },
+          {
+            "title": "Toronto official curriculum source — 2022-2023",
+            "url": "https://artsci.calendar.utoronto.ca/sites/default/files/PDFs/2022-23_ARTSCI_Calendar.pdf",
+            "locator": "PDF/printed pages 290 and 296, CSC302H1 and CSC413H1 description headings"
+          },
+          {
+            "title": "Toronto official curriculum source — 2023-2024",
+            "url": "https://artsci.calendar.utoronto.ca/sites/default/files/PDFs/2023-24_ARTSCI_Calendar.pdf",
+            "locator": "PDF/printed pages 303 and 309, CSC302H1 and CSC413H1 description headings"
+          },
+          {
+            "title": "Toronto official curriculum source — 2024-2025",
+            "url": "https://artsci.calendar.utoronto.ca/sites/default/files/PDFs/2024-25_ARTSCI_Calendar.pdf",
+            "locator": "PDF/printed pages291-292 > integrative inquiry-based activity"
+          },
+          {
+            "title": "Toronto official curriculum source — 2025-2026",
+            "url": "https://artsci.calendar.utoronto.ca/sites/default/files/PDFs/2025-26_ARTSCI_Calendar.pdf",
+            "locator": "PDF/printed pages306-307 > integrative inquiry-based activity"
+          },
+          {
+            "title": "Toronto official curriculum source — 2026-2027",
+            "url": "https://artsci.calendar.utoronto.ca/program/asmaj1689",
+            "locator": "Completion Requirements > Later years > integrative inquiry-based activity"
+          }
+        ],
+        "notes": "Other courses and ASIP provide alternatives. This is not a new-course count or a compulsory AI-credit claim. Historical PEY transition rules and actual teaching were not adjudicated."
+      }
+    ]
+  },
+  {
+    "slug": "drug-recovery",
+    "title": "Drug Recovery Watch",
+    "domain": "Technology",
+    "version": "0.4",
+    "maturity": "Research preview",
+    "as_of": "2026-11-03",
+    "question": "How do recovery expectations differ from delivery dates, supply notes and observed outcomes?",
+    "description": "Track a fixed set of FDA-source product presentations across saved observations, preserving identity holds, date precision and conflicting supply statements.",
+    "coverage": [
+      {
+        "value": "107",
+        "label": "accepted product-presentation observations"
+      },
+      {
+        "value": "3",
+        "label": "identity candidates held"
+      },
+      {
+        "value": "2",
+        "label": "real source observations"
+      },
+      {
+        "value": "0",
+        "label": "substantive revisions in the observed pair"
+      }
+    ],
+    "preview_scope": "Five selected interpretation cases, including one held identity. The underlying observations were captured on 2 and 3 November 2026; API source versions were 30 October and 2 November.",
+    "insight": "A November delivery estimate and a September-next-year recovery estimate can coexist in the same product record.",
+    "limitations": [
+      "The 107 accepted records form a frozen cohort; they do not represent all US shortages or individual medicines.",
+      "Across this one observation pair, 94 raw records were identical and 13 differed only in annotation-array order; no substantive forecast or supply-field changes were found.",
+      "Three identity conflicts remain outside the accepted cohort; one accepted record retains a supply conflict that blocks recovery-outcome interpretation.",
+      "No real-world inventory validation, recovery rate, forecast accuracy or final recovery outcome is reported. Current API links may differ from saved historical evidence."
+    ],
+    "landing_path": "products/drug-recovery.html",
+    "records": [
+      {
+        "id": "DRW-C01",
+        "title": "Delivery and recovery have different dates",
+        "group": "Penicillin G benzathine injection",
+        "period": "2–3 November 2026 observations",
+        "status": "Interpretation case",
+        "summary": "The source reports a next delivery in November 2026 and estimated recovery in September 2027. One shipment does not establish normal supply.",
+        "facts": [
+          {
+            "label": "Product",
+            "value": "Penicillin G benzathine injection"
+          },
+          {
+            "label": "Package NDC",
+            "value": "60793-702-10"
+          },
+          {
+            "label": "Manufacturer",
+            "value": "Pfizer Inc."
+          },
+          {
+            "label": "Source availability",
+            "value": "Limited Availability"
+          },
+          {
+            "label": "Recovery precision",
+            "value": "month"
+          },
+          {
+            "label": "Next delivery estimate",
+            "value": "November 2026"
+          },
+          {
+            "label": "Recovery estimate",
+            "value": "September 2027"
+          }
+        ],
+        "sources": [
+          {
+            "title": "FDA openFDA current package lookup",
+            "url": "https://api.fda.gov/drug/shortages.json?search=package_ndc%3A%2260793-702-10%22&limit=100",
+            "locator": "$.results[909]; API skip=0 in the 2 November 2026 saved response; the live query may now differ."
+          }
+        ],
+        "notes": "This case comes from the 2 November baseline. Relevant source fields were unchanged in the 3 November follow-up. It is a purposefully selected interpretation example, not a random sample, recovery outcome or prediction-accuracy result. The linked API query returns current records, not the historical saved response."
+      },
+      {
+        "id": "DRW-C02",
+        "title": "A quarter is an uncertainty window",
+        "group": "Rifampin injection",
+        "period": "2–3 November 2026 observations",
+        "status": "Interpretation case",
+        "summary": "The source states Q4 2026. October 1 to December 31 encodes that quarter; it is not evidence of a promised December 31 recovery day.",
+        "facts": [
+          {
+            "label": "Product",
+            "value": "Rifampin injection"
+          },
+          {
+            "label": "Package NDC",
+            "value": "67457-445-60"
+          },
+          {
+            "label": "Manufacturer",
+            "value": "Mylan Institutional, a Viatris Company"
+          },
+          {
+            "label": "Source availability",
+            "value": "Unavailable"
+          },
+          {
+            "label": "Recovery precision",
+            "value": "quarter"
+          },
+          {
+            "label": "Recovery estimate",
+            "value": "Q4 2026"
+          },
+          {
+            "label": "Encoded uncertainty window",
+            "value": "1 October–31 December 2026"
+          }
+        ],
+        "sources": [
+          {
+            "title": "FDA openFDA current package lookup",
+            "url": "https://api.fda.gov/drug/shortages.json?search=package_ndc%3A%2267457-445-60%22&limit=100",
+            "locator": "$.results[807]; API skip=0 in the 2 November 2026 saved response; the live query may now differ."
+          }
+        ],
+        "notes": "This case comes from the 2 November baseline. Relevant source fields were unchanged in the 3 November follow-up. It is a purposefully selected interpretation example, not a random sample, recovery outcome or prediction-accuracy result. The linked API query returns current records, not the historical saved response."
+      },
+      {
+        "id": "DRW-C03",
+        "title": "An expiry date is not a recovery forecast",
+        "group": "Methotrexate injection",
+        "period": "2–3 November 2026 observations",
+        "status": "Forecast tracked; outcome held",
+        "summary": "Availability says Unavailable, while the note mentions available short-dated inventory expiring August 31, 2027. The separate estimated recovery is January 2027. Track the forecast; hold baseline-to-recovery interpretation pending supply-status review.",
+        "facts": [
+          {
+            "label": "Product",
+            "value": "Methotrexate injection"
+          },
+          {
+            "label": "Package NDC",
+            "value": "16729-277-35"
+          },
+          {
+            "label": "Manufacturer",
+            "value": "Accord Healthcare Inc."
+          },
+          {
+            "label": "Source availability",
+            "value": "Unavailable"
+          },
+          {
+            "label": "Recovery precision",
+            "value": "month"
+          },
+          {
+            "label": "Recovery estimate",
+            "value": "January 2027"
+          },
+          {
+            "label": "Inventory expiry",
+            "value": "31 August 2027"
+          },
+          {
+            "label": "Outcome interpretation",
+            "value": "Held because availability conflicts"
+          }
+        ],
+        "sources": [
+          {
+            "title": "FDA openFDA current package lookup",
+            "url": "https://api.fda.gov/drug/shortages.json?search=package_ndc%3A%2216729-277-35%22&limit=100",
+            "locator": "$.results[947]; API skip=0 in the 2 November 2026 saved response; the live query may now differ."
+          }
+        ],
+        "notes": "This case comes from the 2 November baseline. Relevant source fields were unchanged in the 3 November follow-up. It is a purposefully selected interpretation example, not a random sample, recovery outcome or prediction-accuracy result. The linked API query returns current records, not the historical saved response."
+      },
+      {
+        "id": "DRW-C04",
+        "title": "Stock on hand can still be restricted",
+        "group": "Methylprednisolone acetate injection",
+        "period": "2–3 November 2026 observations",
+        "status": "Interpretation case",
+        "summary": "The source still reports Limited Availability. Its note gives a November 2026 recovery estimate and describes stock with 8-12 months remaining before expiry. Neither statement establishes unrestricted availability.",
+        "facts": [
+          {
+            "label": "Product",
+            "value": "Methylprednisolone acetate injection"
+          },
+          {
+            "label": "Package NDC",
+            "value": "25021-821-05"
+          },
+          {
+            "label": "Manufacturer",
+            "value": "Sagent Pharmaceuticals"
+          },
+          {
+            "label": "Source availability",
+            "value": "Limited Availability"
+          },
+          {
+            "label": "Recovery precision",
+            "value": "month"
+          },
+          {
+            "label": "Recovery estimate",
+            "value": "November 2026"
+          },
+          {
+            "label": "Stock note",
+            "value": "8–12 months remaining before expiry"
+          }
+        ],
+        "sources": [
+          {
+            "title": "FDA openFDA current package lookup",
+            "url": "https://api.fda.gov/drug/shortages.json?search=package_ndc%3A%2225021-821-05%22&limit=100",
+            "locator": "$.results[913]; API skip=0 in the 2 November 2026 saved response; the live query may now differ."
+          }
+        ],
+        "notes": "This case comes from the 2 November baseline. Relevant source fields were unchanged in the 3 November follow-up. It is a purposefully selected interpretation example, not a random sample, recovery outcome or prediction-accuracy result. The linked API query returns current records, not the historical saved response."
+      },
+      {
+        "id": "DRW-C05",
+        "title": "One package identifier, two incompatible report paths",
+        "group": "Clindamycin / Cleocin injection",
+        "period": "2–3 November 2026 observations",
+        "status": "Identity held",
+        "summary": "The candidate is Current with an estimated December 2028 recovery. Another saved record with the same company, generic name and package NDC is To Be Discontinued, with a June 1, 2026 discontinuation date. Presentation wording differs. This candidate stays outside the accepted list until identity is resolved.",
+        "facts": [
+          {
+            "label": "Product",
+            "value": "Clindamycin / Cleocin injection"
+          },
+          {
+            "label": "Package NDC",
+            "value": "0009-0775-26"
+          },
+          {
+            "label": "Manufacturer",
+            "value": "Pfizer Inc."
+          },
+          {
+            "label": "Source availability",
+            "value": "Unavailable"
+          },
+          {
+            "label": "Recovery precision",
+            "value": "month"
+          },
+          {
+            "label": "Candidate recovery estimate",
+            "value": "December 2028"
+          },
+          {
+            "label": "Other same-NDC record",
+            "value": "To Be Discontinued; 1 June 2026"
+          },
+          {
+            "label": "Cohort decision",
+            "value": "Held outside the 107 accepted records"
+          }
+        ],
+        "sources": [
+          {
+            "title": "FDA openFDA current package lookup",
+            "url": "https://api.fda.gov/drug/shortages.json?search=package_ndc%3A%220009-0775-26%22&limit=100",
+            "locator": "$.results[867]; API skip=0 in the 2 November 2026 saved response; the live query may now differ."
+          }
+        ],
+        "notes": "This case comes from the 2 November baseline. Relevant source fields were unchanged in the 3 November follow-up. It is a purposefully selected interpretation example, not a random sample, recovery outcome or prediction-accuracy result. The linked API query returns current records, not the historical saved response."
+      }
+    ]
+  },
+  {
+    "slug": "policy-targets",
+    "title": "Policy Target Watch",
+    "domain": "Special Topics",
+    "version": "0.1",
+    "maturity": "Research preview",
+    "as_of": "2026-11-03",
+    "question": "What did a government originally target, what changed, and which progress comparisons remain valid?",
+    "description": "Link national Digital Decade targets to revised roadmaps and official progress measures, with deadlines and definitions visible.",
+    "coverage": [
+      {
+        "value": "3",
+        "label": "countries: Austria, Estonia and Finland"
+      },
+      {
+        "value": "39",
+        "label": "target records"
+      },
+      {
+        "value": "2",
+        "label": "confirmed numeric target adjustments"
+      },
+      {
+        "value": "5",
+        "label": "records held"
+      }
+    ],
+    "preview_scope": "Six selected cases. The full edition contains 34 accepted and 5 held records: 2 numeric adjustments, 22 added targets and 10 unchanged targets among the accepted records.",
+    "insight": "Austria’s skills target moves down and Finland’s SME target moves up; equal percentages elsewhere can still hide a definition change.",
+    "limitations": [
+      "Selected national roadmaps and progress reports; no comprehensive EU-country ranking.",
+      "National targets, EU collective targets, planned annual trajectories and observed results remain separate.",
+      "Numeric comparison depends on aligned scope and definition. An added target is not a zero-to-target increase.",
+      "All selected 2030 deadlines are still ahead. Current gaps do not establish final delivery, causes or political motives."
+    ],
+    "landing_path": "products/policy-targets.html",
+    "records": [
+      {
+        "id": "AT-C01",
+        "title": "Austria lowers the national basic digital skills target",
+        "group": "Austria",
+        "period": "Original and revised roadmap versions; 2025 progress reported in 2026",
+        "status": "Target lowered",
+        "summary": "Austria’s original roadmap uses a maximum-100% formulation and also contains a generic 80% heading. The Commission’s 2024 assessment identifies the national target as 100%. The revised roadmap sets 80% for 2030, supporting a 20-percentage-point reduction with the original qualifier retained.",
+        "facts": [
+          {
+            "label": "Original national target",
+            "value": "100% for 2030; original “max.” qualifier"
+          },
+          {
+            "label": "Revised national target",
+            "value": "80% for 2030"
+          },
+          {
+            "label": "2025 observed progress",
+            "value": "69.8%"
+          },
+          {
+            "label": "Distance to revised target",
+            "value": "10.2 percentage points"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Austria official roadmap or Commission report",
+            "url": "https://www.bundeskanzleramt.gv.at/dam/jcr%3Ab7722eed-872d-46ca-8eb0-6d5d2ffbcf03/EN-BMF-Nationaler-Fahrplan-2023-final-28112023-nB.pdf",
+            "locator": "Physical PDF page 14; original evidence for At least basic digital skills"
+          },
+          {
+            "title": "Austria official roadmap or Commission report",
+            "url": "https://www.bundeskanzleramt.gv.at/dam/jcr%3A77a9d7f5-199c-478b-8d75-51460e9ba61b/national-roadmap-for-the-digital-decade-austria-3-2025-bf.pdf",
+            "locator": "Physical PDF page 13; revised evidence for At least basic digital skills"
+          },
+          {
+            "title": "Austria official roadmap or Commission report",
+            "url": "https://ec.europa.eu/newsroom/dae/redirection/document/128635",
+            "locator": "Physical PDF page 5; progress evidence for At least basic digital skills"
+          },
+          {
+            "title": "Austria official roadmap or Commission report",
+            "url": "https://data.consilium.europa.eu/doc/document/ST-11876-2024-ADD-3/en/pdf",
+            "locator": "Physical PDF page 6; supplementary definition or target interpretation for At least basic digital skills"
+          },
+          {
+            "title": "Austria official roadmap or Commission report",
+            "url": "https://www.bundeskanzleramt.gv.at/dam/jcr%3Ab7722eed-872d-46ca-8eb0-6d5d2ffbcf03/EN-BMF-Nationaler-Fahrplan-2023-final-28112023-nB.pdf",
+            "locator": "Physical PDF page 14; supplementary definition or target interpretation for At least basic digital skills"
+          },
+          {
+            "title": "Austria official roadmap or Commission report",
+            "url": "https://www.bundeskanzleramt.gv.at/dam/jcr%3Ab7722eed-872d-46ca-8eb0-6d5d2ffbcf03/EN-BMF-Nationaler-Fahrplan-2023-final-28112023-nB.pdf",
+            "locator": "Physical PDF page 21; supplementary definition or target interpretation for At least basic digital skills"
+          }
+        ],
+        "notes": "The 2024 Commission assessment resolves the national-versus-generic target ambiguity for this comparison. The measure covers people aged 16–74 with at least basic digital skills. The 2030 deadline is still ahead; no final delivery verdict or motive is inferred."
+      },
+      {
+        "id": "FI-CASE-SME",
+        "title": "Finland raises its SME digital intensity target",
+        "group": "Finland",
+        "period": "Original and revised roadmap versions; 2025 progress reported in 2026",
+        "status": "Target raised",
+        "summary": "Finland’s revised roadmap explicitly raises the 2030 target for SMEs with at least basic digital intensity from 90% to 95%. The 2025 DIIv3 result is 94.0%, one percentage point below the revised target.",
+        "facts": [
+          {
+            "label": "Original target",
+            "value": "At least 90% by 2030"
+          },
+          {
+            "label": "Revised target",
+            "value": "95% by 2030"
+          },
+          {
+            "label": "2025 DIIv3 observation",
+            "value": "94.0%"
+          },
+          {
+            "label": "Revision version and memo date",
+            "value": "December 2024 version; 15 January 2025 memo"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Finland official roadmap or Commission report",
+            "url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/c193a20b-672a-4314-bc7a-fe6908b0dc8c/content",
+            "locator": "Physical PDF page 24; original evidence for SMEs with at least a basic level of digital intensity"
+          },
+          {
+            "title": "Finland official roadmap or Commission report",
+            "url": "https://api.hankeikkuna.fi/asiakirjat/c13aac5c-1106-45be-9dd5-a47fa1217b34/e46674a5-4cdc-4a15-916b-c39004f44a93/MUISTIO_20250528082728.PDF",
+            "locator": "Physical PDF page 10; revised evidence for SMEs with at least a basic level of digital intensity"
+          },
+          {
+            "title": "Finland official roadmap or Commission report",
+            "url": "https://data.consilium.europa.eu/doc/document/ST-10476-2026-ADD-10/en/pdf",
+            "locator": "Physical PDF page 5; progress evidence for SMEs with at least a basic level of digital intensity"
+          },
+          {
+            "title": "Finland official roadmap or Commission report",
+            "url": "https://ec.europa.eu/newsroom/dae/redirection/document/128643",
+            "locator": "Roadmap assessment / relevant target-change discussion"
+          }
+        ],
+        "notes": "The surveyed SME group has 10–249 workers. Earlier DII baselines use a different version, so the 94.0% figure does not establish fulfillment of the original commitment. A pre-deadline distance is not a final 2030 verdict."
+      },
+      {
+        "id": "EE_C01",
+        "title": "Estonia adds national KPI targets; an old percentage is not a baseline",
+        "group": "Estonia",
+        "period": "Original and revised roadmap versions; 2025 progress reported in 2026",
+        "status": "New national targets",
+        "summary": "The 2026 Commission report identifies 13 new national targets in Estonia’s 2025 roadmap. The older skills objective of 60% concerns above-basic skills by 2035; the new 80% concerns at least basic skills by 2030. They cannot be treated as a 20-point increase or a five-year acceleration. The revised roadmap also supplies a national cloud-adoption target.",
+        "facts": [
+          {
+            "label": "New national targets reported",
+            "value": "13"
+          },
+          {
+            "label": "Older skills objective",
+            "value": "60%; above-basic skills; 2035"
+          },
+          {
+            "label": "New skills target",
+            "value": "80%; at least basic skills; 2030"
+          },
+          {
+            "label": "New national cloud target",
+            "value": "75% by 2030"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Estonia official roadmap or Commission report",
+            "url": "https://mkm.ee/sites/default/files/documents/2024-09/Estonian%20National%20Digital%20Decade%20Strategic%20Roadmap%202023.pdf",
+            "locator": "Physical PDF page 6; original evidence for At least basic digital skills"
+          },
+          {
+            "title": "Estonia official roadmap or Commission report",
+            "url": "https://www.justdigi.ee/sites/default/files/documents/2025-03/Estonian%20National%20Digital%20Decade%20Strategic%20Roadmap%202025.pdf",
+            "locator": "Physical PDF page 24; revised evidence for At least basic digital skills"
+          },
+          {
+            "title": "Estonia official roadmap or Commission report",
+            "url": "https://ec.europa.eu/newsroom/dae/redirection/document/128642",
+            "locator": "Physical PDF page 17; progress evidence for At least basic digital skills"
+          },
+          {
+            "title": "Estonia official roadmap or Commission report",
+            "url": "https://ec.europa.eu/newsroom/dae/redirection/document/128642",
+            "locator": "Physical PDF page 26; supplementary definition or target interpretation for At least basic digital skills"
+          },
+          {
+            "title": "Estonia official roadmap or Commission report",
+            "url": "https://ec.europa.eu/newsroom/dae/redirection/document/128633",
+            "locator": "Physical PDF page 6; supplementary definition or target interpretation for At least basic digital skills"
+          },
+          {
+            "title": "Estonia official roadmap or Commission report",
+            "url": "https://mkm.ee/sites/default/files/documents/2024-09/Estonian%20National%20Digital%20Decade%20Strategic%20Roadmap%202023.pdf",
+            "locator": "Physical PDF page 3; original evidence for Cloud computing services adoption"
+          },
+          {
+            "title": "Estonia official roadmap or Commission report",
+            "url": "https://www.justdigi.ee/sites/default/files/documents/2025-03/Estonian%20National%20Digital%20Decade%20Strategic%20Roadmap%202025.pdf",
+            "locator": "Physical PDF page 24; revised evidence for Cloud computing services adoption"
+          },
+          {
+            "title": "Estonia official roadmap or Commission report",
+            "url": "https://ec.europa.eu/newsroom/dae/redirection/document/128642",
+            "locator": "Physical PDF page 13; progress evidence for Cloud computing services adoption"
+          },
+          {
+            "title": "Estonia official roadmap or Commission report",
+            "url": "https://ec.europa.eu/newsroom/dae/redirection/document/128642",
+            "locator": "Physical PDF page 26; supplementary definition or target interpretation for Cloud computing services adoption"
+          },
+          {
+            "title": "Estonia official roadmap or Commission report",
+            "url": "https://ec.europa.eu/newsroom/dae/redirection/document/128633",
+            "locator": "Physical PDF page 9; supplementary definition or target interpretation for Cloud computing services adoption"
+          }
+        ],
+        "notes": "Added means newly specified national KPIs in the selected roadmap comparison, not the country’s first related policy promises. EU collective targets and annual planned trajectories are not national observed results."
+      },
+      {
+        "id": "FI-CASE-FTTP",
+        "title": "Finland adds an FTTP target beside its VHCN target",
+        "group": "Finland",
+        "period": "Original and revised roadmap versions; 2025 progress reported in 2026",
+        "status": "New target; distinct indicators",
+        "summary": "Finland explicitly adds a 100% FTTP coverage target for 2030 in the revised roadmap. Its 2025 FTTP coverage is 80.0%, while VHCN coverage is 84.6%. The two indicators describe different network coverage measures and remain separate.",
+        "facts": [
+          {
+            "label": "New FTTP target",
+            "value": "100% by 2030"
+          },
+          {
+            "label": "2025 FTTP coverage",
+            "value": "80.0%"
+          },
+          {
+            "label": "2025 VHCN coverage",
+            "value": "84.6%"
+          },
+          {
+            "label": "Revised VHCN target",
+            "value": "100% by 2030"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Finland official roadmap or Commission report",
+            "url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/c193a20b-672a-4314-bc7a-fe6908b0dc8c/content",
+            "locator": "Physical PDF page 24; original evidence for Fixed Very High-Capacity Network coverage"
+          },
+          {
+            "title": "Finland official roadmap or Commission report",
+            "url": "https://api.hankeikkuna.fi/asiakirjat/c13aac5c-1106-45be-9dd5-a47fa1217b34/e46674a5-4cdc-4a15-916b-c39004f44a93/MUISTIO_20250528082728.PDF",
+            "locator": "Physical PDF page 10; revised evidence for Fixed Very High-Capacity Network coverage"
+          },
+          {
+            "title": "Finland official roadmap or Commission report",
+            "url": "https://data.consilium.europa.eu/doc/document/ST-10476-2026-ADD-10/en/pdf",
+            "locator": "Physical PDF page 5; progress evidence for Fixed Very High-Capacity Network coverage"
+          },
+          {
+            "title": "Finland official roadmap or Commission report",
+            "url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/c193a20b-672a-4314-bc7a-fe6908b0dc8c/content",
+            "locator": "Physical PDF page 24; original evidence for Fibre to the Premises coverage"
+          },
+          {
+            "title": "Finland official roadmap or Commission report",
+            "url": "https://api.hankeikkuna.fi/asiakirjat/c13aac5c-1106-45be-9dd5-a47fa1217b34/e46674a5-4cdc-4a15-916b-c39004f44a93/MUISTIO_20250528082728.PDF",
+            "locator": "Physical PDF page 10; revised evidence for Fibre to the Premises coverage"
+          },
+          {
+            "title": "Finland official roadmap or Commission report",
+            "url": "https://data.consilium.europa.eu/doc/document/ST-10476-2026-ADD-10/en/pdf",
+            "locator": "Physical PDF page 5; progress evidence for Fibre to the Premises coverage"
+          },
+          {
+            "title": "Finland official roadmap or Commission report",
+            "url": "https://ec.europa.eu/newsroom/dae/redirection/document/128643",
+            "locator": "Roadmap assessment / relevant target-change discussion"
+          }
+        ],
+        "notes": "Coverage concerns households, not the proportion subscribing to fibre. An added FTTP target does not mean earlier network policy was absent. The original broad gigabit narrative also mentions enterprises, so it is not assessed as fulfilled using the narrower household observation."
+      },
+      {
+        "id": "FI-CASE-DATA",
+        "title": "The same 75% can refer to a different indicator",
+        "group": "Finland",
+        "period": "Original and revised roadmap versions; 2025 progress reported in 2026",
+        "status": "Definition comparison held",
+        "summary": "The original target table specifies 75% for big-data adoption; the revised table specifies 75% for data analytics. The indicator and measurement scope changed, so equal numbers cannot establish an unchanged target on the same definition.",
+        "facts": [
+          {
+            "label": "Original target label",
+            "value": "Big data; 75% by 2030"
+          },
+          {
+            "label": "Revised target label",
+            "value": "Data analytics; 75% by 2030"
+          },
+          {
+            "label": "2025 data analytics observation",
+            "value": "45.1%"
+          },
+          {
+            "label": "Cross-version comparison",
+            "value": "Held"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Finland official roadmap or Commission report",
+            "url": "https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/c193a20b-672a-4314-bc7a-fe6908b0dc8c/content",
+            "locator": "Physical PDF page 24; original evidence for Big data / data analytics uptake"
+          },
+          {
+            "title": "Finland official roadmap or Commission report",
+            "url": "https://api.hankeikkuna.fi/asiakirjat/c13aac5c-1106-45be-9dd5-a47fa1217b34/e46674a5-4cdc-4a15-916b-c39004f44a93/MUISTIO_20250528082728.PDF",
+            "locator": "Physical PDF page 10; revised evidence for Big data / data analytics uptake"
+          },
+          {
+            "title": "Finland official roadmap or Commission report",
+            "url": "https://data.consilium.europa.eu/doc/document/ST-10476-2026-ADD-10/en/pdf",
+            "locator": "Physical PDF page 5; progress evidence for Big data / data analytics uptake"
+          },
+          {
+            "title": "Finland official roadmap or Commission report",
+            "url": "https://ec.europa.eu/newsroom/dae/redirection/document/128633",
+            "locator": "Physical PDF page 9; supplementary definition or target interpretation for Big data / data analytics uptake"
+          }
+        ],
+        "notes": "Official methodology states that data analytics covers a broader technology set. The original narrative says SMEs while its table says enterprises, which is another retained ambiguity. No old-target gap or policy-strengthening/weakening conclusion is calculated."
+      },
+      {
+        "id": "EE_C03",
+        "title": "Estonia’s edge-node target remains unresolved",
+        "group": "Estonia",
+        "period": "Original and revised roadmap versions; 2025 progress reported in 2026",
+        "status": "Source conflict held",
+        "summary": "The 2026 summary table lists an Estonian edge-node target of 5, but the report narrative says no target was set and the 2025 roadmap’s national-target cell is a dash. The 2025 estimate of 28 nodes uses a new method. Both the target and cross-version outcome comparison remain held.",
+        "facts": [
+          {
+            "label": "Roadmap national target",
+            "value": "Dash; no numeric target"
+          },
+          {
+            "label": "2026 report summary target",
+            "value": "5"
+          },
+          {
+            "label": "2026 report narrative",
+            "value": "No national target set"
+          },
+          {
+            "label": "2025 estimate",
+            "value": "28 nodes; new methodology"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Estonia official roadmap or Commission report",
+            "url": "https://mkm.ee/sites/default/files/documents/2024-09/Estonian%20National%20Digital%20Decade%20Strategic%20Roadmap%202023.pdf",
+            "locator": "Physical PDF page 3; original evidence for Edge nodes — conflicting target evidence"
+          },
+          {
+            "title": "Estonia official roadmap or Commission report",
+            "url": "https://www.justdigi.ee/sites/default/files/documents/2025-03/Estonian%20National%20Digital%20Decade%20Strategic%20Roadmap%202025.pdf",
+            "locator": "Physical PDF page 24; revised evidence for Edge nodes — conflicting target evidence"
+          },
+          {
+            "title": "Estonia official roadmap or Commission report",
+            "url": "https://ec.europa.eu/newsroom/dae/redirection/document/128642",
+            "locator": "Physical PDF page 10; progress evidence for Edge nodes — conflicting target evidence"
+          },
+          {
+            "title": "Estonia official roadmap or Commission report",
+            "url": "https://ec.europa.eu/newsroom/dae/redirection/document/128642",
+            "locator": "Physical PDF page 5; supplementary definition or target interpretation for Edge nodes — conflicting target evidence"
+          },
+          {
+            "title": "Estonia official roadmap or Commission report",
+            "url": "https://ec.europa.eu/newsroom/dae/redirection/document/128642",
+            "locator": "Physical PDF page 26; supplementary definition or target interpretation for Edge nodes — conflicting target evidence"
+          },
+          {
+            "title": "Estonia official roadmap or Commission report",
+            "url": "https://ec.europa.eu/newsroom/dae/redirection/document/128642",
+            "locator": "Physical PDF page 10; supplementary definition or target interpretation for Edge nodes — conflicting target evidence"
+          },
+          {
+            "title": "Estonia official roadmap or Commission report",
+            "url": "https://ec.europa.eu/newsroom/dae/redirection/document/128633",
+            "locator": "Physical PDF page 8; supplementary definition or target interpretation for Edge nodes — conflicting target evidence"
+          }
+        ],
+        "notes": "The 10,000 figure in the roadmap is the EU target, not Estonia’s. Neither 28 divided by 5 nor growth from the earlier baseline is reported. The conflicting sources need clarification; no final delivery conclusion is made."
+      }
+    ]
+  },
+  {
+    "slug": "synopsis-notes",
+    "title": "Synopsis Notes",
+    "domain": "Culture",
+    "version": "0.2",
+    "maturity": "exploratory",
+    "question": "Which character, livelihood and story details do two language versions actually state?",
+    "description": "An exploratory comparison of official English and French film introductions, with shared facts, information differences and unresolved interpretations kept visible.",
+    "coverage": [
+      {
+        "value": "38",
+        "label": "films in the fixed selection frame"
+      },
+      {
+        "value": "29",
+        "label": "complete English/French text pairs reviewed"
+      },
+      {
+        "value": "9",
+        "label": "entries missing a complete pair"
+      },
+      {
+        "value": "7",
+        "label": "selected cases in this public preview"
+      }
+    ],
+    "preview_scope": "Seven selected cases from a fresh factual review of 29 complete pairs within the 38-film Un Certain Regard selections for 2022 and 2024. All seven public cases have two readable, hash-verified saved snapshots. Selection years are not capture dates: pages were retrieved in November 2026.",
+    "insight": "Differences can be concrete, such as a named family relationship or job, while some pairs preserve the same facts and some wording requires interpretation.",
+    "limitations": [
+      "This is an exploratory text comparison, not a cultural trend index or a translation-quality score.",
+      "Nine of the 38 frame entries lack a complete bounded English/French pair and remain unclassified.",
+      "The review reads all 29 preserved text pairs. Of their 58 full-page snapshot files, 42 were locally readable and reverified; 16 were not resident and were skipped. Every public case has both full snapshots verified.",
+      "The snapshots are saved web-tool text extractions, not original HTML. They were retrieved in November 2026; first publication dates, translation direction and past wording are unknown.",
+      "A detail not stated in an introduction may still appear in the film. No film-level fact checking or inference about editorial motives is made.",
+      "The case review was performed by AI agents, not certified by a human bilingual editor."
+    ],
+    "landing_path": "products/synopsis-notes.html",
+    "records": [
+      {
+        "id": "cannes_2024_ucr_16",
+        "title": "The Village Next to Paradise: a more specific household",
+        "group": "Relationships and livelihood",
+        "period": "2024 festival selection; captured November 2026",
+        "status": "Different information",
+        "summary": "The French introduction identifies the family members and the father’s casual work. The English introduction describes the household more broadly.",
+        "facts": [
+          {
+            "label": "English",
+            "value": "An unnamed family navigates life in a Somali village."
+          },
+          {
+            "label": "French",
+            "value": "A single father supports his son through small jobs; his sister returns after divorce."
+          },
+          {
+            "label": "Reading use",
+            "value": "Check whether a catalogue introduction tells readers who belongs to the household and how it earns income."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Festival de Cannes — English synopsis",
+            "url": "https://www.festival-cannes.com/en/f/the-village-next-to-paradise/",
+            "locator": "Extracted lines L22–L22, after Un Certain Regard and before director metadata"
+          },
+          {
+            "title": "Festival de Cannes — French synopsis",
+            "url": "https://www.festival-cannes.com/f/the-village-next-to-paradise/",
+            "locator": "Extracted lines L24–L25, after Un Certain Regard and before director metadata"
+          }
+        ],
+        "notes": "The comparison concerns these two saved synopses. Unstated details may still be present in the film."
+      },
+      {
+        "id": "cannes_2022_ucr_20",
+        "title": "War Pony: the stated reason for earning money",
+        "group": "Livelihood wording",
+        "period": "2022 festival selection; captured November 2026",
+        "status": "Different information",
+        "summary": "Both versions list the same money-making activities. French explicitly describes the need to make ends meet; English describes Bill’s wish to advance himself.",
+        "facts": [
+          {
+            "label": "Shared detail",
+            "value": "Both list siphoning fuel, delivery work and breeding dogs."
+          },
+          {
+            "label": "Difference",
+            "value": "The descriptions state his economic aim differently."
+          },
+          {
+            "label": "Reading use",
+            "value": "Separate listed activities from the reason supplied for undertaking them."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Festival de Cannes — English synopsis",
+            "url": "https://www.festival-cannes.com/en/f/war-pony/",
+            "locator": "Extracted lines L24–L25, after Un Certain Regard and before director metadata"
+          },
+          {
+            "title": "Festival de Cannes — French synopsis",
+            "url": "https://www.festival-cannes.com/f/war-pony/",
+            "locator": "Extracted lines L24–L25, after Un Certain Regard and before director metadata"
+          }
+        ],
+        "notes": "Neither introduction establishes the absence of financial pressure. No poverty score or editorial motive is inferred."
+      },
+      {
+        "id": "cannes_2024_ucr_08",
+        "title": "My Sunshine: location and coach details",
+        "group": "Setting and occupation",
+        "period": "2024 festival selection; captured November 2026",
+        "status": "Different information",
+        "summary": "The French synopsis identifies Hokkaido. The English synopsis identifies the skating coach as Arakawa and gives him a championship background.",
+        "facts": [
+          {
+            "label": "Shared detail",
+            "value": "A coach prepares Takuya and Sakura to skate together in a competition."
+          },
+          {
+            "label": "English detail",
+            "value": "The island is described broadly; the coach is named and his previous success is stated."
+          },
+          {
+            "label": "French detail",
+            "value": "The island is named; the coach’s name and championship background are unstated."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Festival de Cannes — English synopsis",
+            "url": "https://www.festival-cannes.com/en/f/my-sunshine/",
+            "locator": "Extracted lines L21–L22, after Un Certain Regard and before director metadata"
+          },
+          {
+            "title": "Festival de Cannes — French synopsis",
+            "url": "https://www.festival-cannes.com/f/my-sunshine/",
+            "locator": "Extracted lines L21–L22, after Un Certain Regard and before director metadata"
+          }
+        ],
+        "notes": "Different levels of specificity are compatible. These details do not establish a translation mistake."
+      },
+      {
+        "id": "cannes_2024_ucr_05",
+        "title": "Dog on Trial: different details about the same case",
+        "group": "Actions and stakes",
+        "period": "2024 festival selection; captured November 2026",
+        "status": "Different information",
+        "summary": "English states that Cosmos bit three people and risks being killed if his defence fails. French names Dariuch as the person requesting the lawyer’s help.",
+        "facts": [
+          {
+            "label": "Shared detail",
+            "value": "A lawyer agrees to represent a dog in court."
+          },
+          {
+            "label": "English detail",
+            "value": "The incident and possible consequence are specified."
+          },
+          {
+            "label": "French detail",
+            "value": "The human client and his request are specified."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Festival de Cannes — English synopsis",
+            "url": "https://www.festival-cannes.com/en/f/le-proces-du-chien/",
+            "locator": "Extracted lines L24–L25, after Un Certain Regard and before director metadata"
+          },
+          {
+            "title": "Festival de Cannes — French synopsis",
+            "url": "https://www.festival-cannes.com/f/le-proces-du-chien/",
+            "locator": "Extracted lines L22–L22, after Un Certain Regard and before director metadata"
+          }
+        ],
+        "notes": "Only the bounded introductions are compared; the film and the correctness of either account have not been checked."
+      },
+      {
+        "id": "cannes_2024_ucr_18",
+        "title": "Vingt Dieux: a same-information control",
+        "group": "Shared factual content",
+        "period": "2024 festival selection; captured November 2026",
+        "status": "Shared facts",
+        "summary": "Both introductions give the same central family obligation, need for income and proposed cheese-making prize.",
+        "facts": [
+          {
+            "label": "Family",
+            "value": "Totone is 18 and becomes responsible for his seven-year-old sister."
+          },
+          {
+            "label": "Livelihood",
+            "value": "He aims to win a prize by producing Comté."
+          },
+          {
+            "label": "Plan",
+            "value": "Both versions specify a gold award and a €30,000 agricultural prize."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Festival de Cannes — English synopsis",
+            "url": "https://www.festival-cannes.com/en/f/vingt-dieux/",
+            "locator": "Extracted lines L26–L26, after Un Certain Regard and before director metadata"
+          },
+          {
+            "title": "Festival de Cannes — French synopsis",
+            "url": "https://www.festival-cannes.com/f/vingt-dieux/",
+            "locator": "Extracted lines L24–L24, after Un Certain Regard and before director metadata"
+          }
+        ],
+        "notes": "This is a control within the three reviewed factual fields, not a claim that every wording nuance is identical."
+      },
+      {
+        "id": "cannes_2022_ucr_19",
+        "title": "Godland: where factual comparison stops",
+        "group": "Interpretation boundary",
+        "period": "2022 festival selection; captured November 2026",
+        "status": "Uncertain interpretation",
+        "summary": "Both introductions identify a Danish priest travelling to Iceland to build a church and take photographs. Their closing moral descriptions use different language.",
+        "facts": [
+          {
+            "label": "English ending",
+            "value": "Departure from purpose and moral direction."
+          },
+          {
+            "label": "French ending",
+            "value": "Exposure to temptation and sin."
+          },
+          {
+            "label": "Review decision",
+            "value": "Keep the shared actions; leave the broader meaning unresolved."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Festival de Cannes — English synopsis",
+            "url": "https://www.festival-cannes.com/en/f/vanskabte-land-volada-land/",
+            "locator": "Extracted lines L23–L23, after Un Certain Regard and before director metadata"
+          },
+          {
+            "title": "Festival de Cannes — French synopsis",
+            "url": "https://www.festival-cannes.com/f/vanskabte-land-volada-land/",
+            "locator": "Extracted lines L21–L21, after Un Certain Regard and before director metadata"
+          }
+        ],
+        "notes": "Different moral vocabulary alone does not prove a changed event, translation failure or difference in national values."
+      },
+      {
+        "id": "cannes_2022_ucr_07",
+        "title": "The Blue Caftan: shared relationships and work",
+        "group": "Shared factual content",
+        "period": "2022 festival selection; captured November 2026",
+        "status": "Shared facts",
+        "summary": "Both introductions describe Halim and Mina’s marriage, their caftan business, his concealed homosexuality, her illness and the arrival of an apprentice.",
+        "facts": [
+          {
+            "label": "Relationships",
+            "value": "The same couple and personal circumstances are specified."
+          },
+          {
+            "label": "Livelihood",
+            "value": "Both place the couple in a traditional clothing shop in Salé."
+          },
+          {
+            "label": "Trigger",
+            "value": "Both connect illness and a new apprentice with disruption of the household’s balance."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Festival de Cannes — English synopsis",
+            "url": "https://www.festival-cannes.com/en/f/le-bleu-du-caftan/",
+            "locator": "Extracted lines L23–L23, after Un Certain Regard and before director metadata"
+          },
+          {
+            "title": "Festival de Cannes — French synopsis",
+            "url": "https://www.festival-cannes.com/f/le-bleu-du-caftan/",
+            "locator": "Extracted lines L21–L21, after Un Certain Regard and before director metadata"
+          }
+        ],
+        "notes": "The control checks explicit information in these fields. It does not certify equivalence of tone or translation quality."
+      }
+    ],
+    "as_of": "2026-11-03"
+  }
+]
